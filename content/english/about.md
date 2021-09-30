@@ -29,13 +29,13 @@ image: images/backgrounds/portrait.jpg
 skill:
   enable: true
   skill_list:
-  - name: Web Development
-    percentage: 98%
-  - name: Graphic Design
-    percentage: 85%
-  - name: Database Management
+  - name: R
     percentage: 90%
-  - name: Wordpress
+  - name: Python
+    percentage: 73.2%
+  - name: SQL
+    percentage: 53.5%
+  - name: Power Bi
     percentage: 70%
   title: SKILL
 title: KNOW MORE <br> ABOUT ME
