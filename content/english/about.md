@@ -34,6 +34,9 @@ skill:
     percentage: 53.5%
   - name: Power Bi
     percentage: 70%
+   - name: Inglês
+     percentage: 70%
+   
   title: SKILL
 title: CONHEÇA MAIS <br> SOBRE MIM
 ---
