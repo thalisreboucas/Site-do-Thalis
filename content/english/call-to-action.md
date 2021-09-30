@@ -2,10 +2,10 @@
 bg_image: images/backgrounds/need-service.jpg
 button:
   enable: true
-  label: SAY HELLO!
-  link: '#contact'
+  label: Como posso ajuda-lo ?
+  link: 'thalisreboucasdeoliveira@gmail.com'
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
-title: NEED A SERVICE?
+title: Olá , tudo certo ?
 ---
