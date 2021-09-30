@@ -35,7 +35,7 @@ skill:
   - name: Power Bi
     percentage: 70%
   title: SKILL
-title: KNOW MORE <br> ABOUT ME
+title: CONHEÇA MAIS <br> SOBRE MIM
 ---
 
 Eu me chamo Thalis, tenho 21 anos , estou no 6º semestre da Faculdade  , amo probabilidade , análise de dados e machine learning......😊
