@@ -58,15 +58,15 @@ Languages:
     languageCode: en-us
     languageName: En
     menu:
-      main:
+       main:
         - name: Home
           url: /
           weight: 1
-        - name: About me
+        - name: Sobre Mim
           pre: '#'
           url: about
           weight: 2
-        - name: Service
+        - name: Analises
           pre: '#'
           url: service
           weight: 3
@@ -74,17 +74,13 @@ Languages:
           pre: '#'
           url: portfolio
           weight: 4
-        - name: Testimonial
-          pre: '#'
-          url: testimonial
-          weight: 5
-        - name: Contact
+        - name: Contato
           pre: '#'
           url: contact
-          weight: 6
+          weight: 5
         - name: Blog
           url: blog
-          weight: 7
+          weight: 6
     weight: 1
   fr:
     contentDir: content/french
@@ -93,7 +89,7 @@ Languages:
     languageCode: fr-fr
     languageName: Fr
     menu:
-      main:
+     main:
         - name: Home
           url: /
           weight: 1
@@ -109,12 +105,8 @@ Languages:
           pre: '#'
           url: portfolio
           weight: 4
-        - name: Testimonial
-          pre: '#'
-          url: testimonial
-          weight: 5
-        - name: Contact
+        - name: Contato
           pre: '#'
           url: contact
-          weight: 6
+          weight: 5
     weight: 2
