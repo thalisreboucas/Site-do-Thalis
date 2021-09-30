@@ -1,5 +1,5 @@
-baseURL: https://examplesite.com
-title: Somrat | Hugo Portfolio Template
+baseURL: https://thalis.netlify.app/
+title: Thalis | Portfolio 
 theme: somrat
 paginate: '6'
 summaryLength: '10'
@@ -43,15 +43,13 @@ params:
     preloader: images/preloader.gif
   social:
     - icon: fab fa-facebook-f
-      link: https://www.facebook.com/somratpro
-    - icon: fab fa-twitter
-      link: https://twitter.com/somratpro
+      link: https://www.facebook.com/thalisreboucas
     - icon: fab fa-instagram
-      link: https://www.instagram.com/somratpro
+      link: https://www.instagram.com/thalisreboucas
     - icon: fab fa-github
-      link: https://github.com/somratpro
+      link: https://github.com/thalisreboucas
     - icon: fab fa-linkedin
-      link: https://www.linkedin.com/in/somratpro
+      link: https://www.linkedin.com/in/thalisreboucas
 Languages:
   en:
     contentDir: content/english
