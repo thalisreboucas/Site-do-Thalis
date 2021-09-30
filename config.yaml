@@ -1,7 +1,7 @@
 baseURL: https://thalis.netlify.app/
 title: Thalis | Portfolio 
 theme: somrat
-paginate: '6'
+paginate: '5'
 summaryLength: '10'
 disableLanguages: []
 googleAnalytics: ''
@@ -15,7 +15,7 @@ markup:
 params:
   author: somrat
   description: This is meta description
-  favicon: static/images/lcon.png
+  favicon: images/lcon.png
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
   logo_width: 150px
@@ -53,7 +53,7 @@ params:
 Languages:
   en:
     contentDir: content/english
-    copyright: Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)
+    copyright: Copyright &copy; 2021 a hugo theme by [somrat](https://somrat.netlify.com)
     home: Home
     languageCode: en-us
     languageName: En
