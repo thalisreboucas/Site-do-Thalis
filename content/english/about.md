@@ -2,29 +2,26 @@
 button:
   enable: true
   label: DOWNLOAD MY CV
-  link: '#'
+  link: 'https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton'
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
 experience:
   enable: true
   experience_list:
-  - company: Fiverr.com
-    content: I work with HTML, CSS, and Javascript to create websites and web applications
-      like Personal, Business, Blog, E-comerches etc.
-    duration: 2016-2018
-    name: Web Developer
-  - company: Fiverr.com
-    content: Graphic design is art with a purpose. I love illustration, so logo desing
-      is my favorite work. But i can do many things with graphics.
-    duration: 2015-2018
-    name: Graphic Designer
-  - company: Polytechnic
-    content: Database management is among the fundamental processes in the software
-      field of computing. I know MS Access very well.
-    duration: 2014-2018
-    name: Database Manager
-  title: EXPERIENCE
+  - company: Empresa Júnior Gauss
+    content: Virei o Presidente da Empresa Júnior no meio do ano de 2021, e com isso fiquei na parte de organização toda a empresa na parte jurídica  e diretorias da empresa ,além de cuidar do planejamento estratégico .
+    duration: 2021.2
+    name: Diretor Presidente
+  - company: Empresa Júnior Gauss
+    content: Virei Diretor da Empresa Júnior no meio do ano de 2020, e com isso fiquei na parte de organização de consultorias e trabalhos na empresa ,além de cuidar e responder os emails recebidos .
+    duration:  2020.2-2021.2
+    name: Diretor de Projetos
+  - company: Empresa Júnior Gauss
+    content: Entrei como assessor da Empresa Júnior em setembro do ano de 2019, e participei de algumas consultorias e  fiz alguns trabalhos na empresa.
+    duration:  2019 - 2020.2
+    name: Assessor de Projetos
+  title: EXPERIÊNCIA
 image: images/backgrounds/portrait.jpg
 skill:
   enable: true
@@ -41,4 +38,4 @@ skill:
 title: KNOW MORE <br> ABOUT ME
 ---
 
-It's Somrat, Professional Web Developer. I love to write code, it's my passoin. I am here to help you, i am here to design your web page. i can help you to describe yourself in the best way.<br>No matter how difficult your web page is, i will find an easy way and complete your work anyway. Stay connect with me........😊
+Eu me chamo Thalis, tenho 21 anos , estou no 6º semestre da Faculdade  , amo probabilidade , análise de dados e machine learning......😊
