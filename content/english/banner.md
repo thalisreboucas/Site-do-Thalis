@@ -7,15 +7,15 @@ button:
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
-first_name: MacGyver
-last_name: SOMRAT
+first_name: Thalis
+last_name: REBOUÇAS
 occupations:
-- Web Developer
-- Graphic Designer
-- Database Manager
+- Statistic
+- Data Scientist
+- Data anlytics
 slider_images:
 - images/slider/slider-1.jpg
 - images/slider/slider-2.jpg
 - images/slider/slider-3.jpg
-title: I'm Somrat Sorkar
+title: Thalis Rebouças
 ---
