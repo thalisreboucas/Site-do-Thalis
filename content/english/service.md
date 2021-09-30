@@ -10,10 +10,10 @@ service_list:
 - image: images/icons/dbms.png
   name: Database Janitor
 - image: images/icons/software-development.png
-  name: Software Development
+  name: Data Mining
 - image: images/icons/marketing.png
   name: Data Analysis 
 - image: images/icons/mobile-app.png
-  name: Mobile App Development
+  name: Sound Engineer
 title: HABILIDADES
 ---
