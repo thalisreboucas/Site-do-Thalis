@@ -5,8 +5,8 @@ custom_class: ""
 custom_css: ""
 email: Email
 form_action: '#'
-message: Message
-name: Name
+message: Mensagem 
+name: Nome
 submit: Submit
-title: SAY HELLO!
+title: Diga Olá!
 ---
