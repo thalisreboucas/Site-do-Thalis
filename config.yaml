@@ -15,7 +15,7 @@ markup:
 params:
   author: somrat
   description: This is meta description
-  favicon: images/favicon.png
+  favicon: static/images/lcon.png
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
   logo_width: 150px
