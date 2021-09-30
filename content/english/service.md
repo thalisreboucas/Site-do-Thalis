@@ -4,16 +4,16 @@ custom_class: ""
 custom_css: ""
 service_list:
 - image: images/icons/web-development.png
-  name: Web Development
+  name: R/Python Programing
 - image: images/icons/graphic-design.png
-  name: Graphic Design
+  name: Make Dashboard
 - image: images/icons/dbms.png
-  name: Database Management
+  name: Database Janitor
 - image: images/icons/software-development.png
   name: Software Development
 - image: images/icons/marketing.png
-  name: Digital Marketing
+  name: Data Analysis 
 - image: images/icons/mobile-app.png
   name: Mobile App Development
-title: SERVICES
+title: HABILIDADES
 ---
