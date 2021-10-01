@@ -4,17 +4,17 @@ custom_attributes: ""
 custom_class: ""
 custom_css: ""
 funfacts:
-- count: "100"
+- count: "8"
   image: images/icons/works.png
-  name: HANDS TO WORK
-- count: "200"
+  name: PROJETOS FEITOS
+- count: "10"
   image: images/icons/happy.png
-  name: HAPPY CLIENT
-- count: "250"
+  name: Eventos de Som
+- count: "5"
   image: images/icons/project.png
-  name: FINISHED PROJECT
-- count: "150"
+  name: COODERNARDOR DE PROJETOS
+- count: "257"
   image: images/icons/coffee.png
-  name: CUPS OF COFFEE
+  name: COPOS DE CAFÉ
 title: ""
 ---
