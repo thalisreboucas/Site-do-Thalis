@@ -56,7 +56,7 @@ Languages:
     copyright: Copyright &copy; 2021 a hugo theme by [somrat](https://somrat.netlify.com)
     home: Home
     languageCode: en-us
-    languageName: En
+    languageName: PT
     menu:
        main:
         - name: Home
@@ -82,31 +82,4 @@ Languages:
           url: blog
           weight: 6
     weight: 1
-  fr:
-    contentDir: content/french
-    copyright: Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)
-    home: Accueil
-    languageCode: fr-fr
-    languageName: Fr
-    menu:
-     main:
-        - name: Home
-          url: /
-          weight: 1
-        - name: About me
-          pre: '#'
-          url: about
-          weight: 2
-        - name: Service
-          pre: '#'
-          url: service
-          weight: 3
-        - name: Portfolio
-          pre: '#'
-          url: portfolio
-          weight: 4
-        - name: Contato
-          pre: '#'
-          url: contact
-          weight: 5
-    weight: 2
+  
