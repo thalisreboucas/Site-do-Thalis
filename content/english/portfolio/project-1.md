@@ -1,8 +1,8 @@
 ---
 categories:
-- design
-- development
-date: "2020-05-12T12:14:34+06:00"
+- R
+- Database
+date: "2021-01-10 T12:14:34 +06:00"
 description: This is meta description.
 draft: false
 image: images/portfolio/item1.jpg
@@ -10,7 +10,7 @@ project_info:
 - content: John Doe
   icon: fas fa-user
   name: Client
-- content: https://examplesite.com/
+- content: https://thalisreboucas.github.io/Forecastingcorn/
   icon: fas fa-link
   name: Project Link
 - content: Add whatever you want
@@ -19,7 +19,7 @@ project_info:
 - content: This is in a loop
   icon: fas fa-redo
   name: Loop Item
-title: Project Title
+title: Forecasting do Preço do Milho
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -29,7 +29,7 @@ fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c
 mollit anim id est laborum.
 
 
-#### Project Details
+#### Projeto detalhe
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -41,7 +41,7 @@ dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur au
 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.
 
 
-#### Project Requirements
+#### Requirementos para o Projeto
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
