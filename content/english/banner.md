@@ -2,7 +2,7 @@
 bg_image: images/backgrounds/full-nav-bg.jpg
 button:
   enable: true
-  label: HIRE ME
+  label: CONTATO
   link: '#contact'
 custom_attributes: ""
 custom_class: ""
