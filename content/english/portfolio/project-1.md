@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 categories:
 - R
@@ -25,31 +24,3 @@ Sabemos o quão legal é tentar prever o que vai acontecer no futuro com isso eu
 #### Requirementos para o Projeto
 
 Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
-=======
----
-categories:
-- R
-- Database
-date: "2021-01-10T12:14:34+03:00"
-description: This is meta description.
-draft: false
-image: images/portfolio/forecasting.jpg
-project_info:
-- content: https://thalisreboucas.github.io/Forecastingcorn/
-  icon: fas fa-link
-  name: Link do Projeto
-
-title: Previsão do Preço do Milho
----
-
-
-
-#### Projeto detalhe
-
-Sabemos o quão legal é tentar prever o que vai acontecer no futuro com isso eu fiz uma previsão para uma empresa com o preço do milho para ver como aconteceria isso nos próximos 6 meses.
-
-
-#### Requirementos para o Projeto
-
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
->>>>>>> d7a1075da5149ec0bbe2c5d9274a21b9163d8bf7
