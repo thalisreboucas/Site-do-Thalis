@@ -14,7 +14,7 @@ occupations:
 - Data Scientist
 - Data anlytics
 slider_images:
-- images/slider/slider-1.jpg
+- images/slider/slider-1.gif
 - images/slider/slider-2.jpg
 - images/slider/slider-3.jpg
 title: Thalis Rebouças
