@@ -6,7 +6,7 @@ service_list:
 - image: images/icons/web-development.png
   name: R/Python Programing
 - image: images/icons/graphic-design.png
-  name: Make Dashboard
+  name: Do Dashboard
 - image: images/icons/dbms.png
   name: Database Janitor
 - image: images/icons/software-development.png
