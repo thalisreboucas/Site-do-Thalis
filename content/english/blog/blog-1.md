@@ -2,11 +2,11 @@
 date: "2020-05-12T12:14:34+06:00"
 description: This is meta description.
 draft: false
-image: images/portfolio/item1.jpg
+image: images/portfolio/forecasting.jpg
 tags:
-- design
-- development
-title: This Is A Simple Blog Post
+- R
+- Database
+title: Forecasting corn
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
