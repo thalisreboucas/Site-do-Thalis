@@ -3,19 +3,14 @@ categories:
 - Python
 - development
 date: "2021-01-10T12:14:34+06:00"
-description: This is meta description.
+description: C0des in Python.
 draft: false
 image: images/portfolio/item2.jpg
 project_info:
 - content: https://github.com/thalisreboucas/Python-codes-ML
   icon: fas fa-link
   name: Project Link
-- content: Add whatever you want
-  icon: fas fa-globe
-  name: New Item
-- content: This is in a loop
-  icon: fas fa-redo
-  name: Loop Item
+
 title: C0des Python
 ---
 
