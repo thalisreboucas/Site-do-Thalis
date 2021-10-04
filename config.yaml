@@ -42,6 +42,8 @@ params:
     enable: yes
     preloader: images/preloader.gif
   social:
+    - icon: fab fa-twitter
+      link: https://twitter.com/ThalisReboucas
     - icon: fab fa-facebook-f
       link: https://www.facebook.com/thalisreboucas
     - icon: fab fa-instagram
