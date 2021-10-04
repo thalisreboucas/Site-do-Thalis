@@ -14,8 +14,10 @@ Esse é um blog para postar um pouco sobre os codigos que eu fiz e irei postar p
  ### Redes Socias 
 Me sigam nas minhas redes !!
 
-https://www.facebook.com/thalisreboucas/
+https://www.facebook.com/thalisreboucas/ 
+
 https://www.instagram.com/thalisreboucas/
+
 https://www.linkedin.com/in/thalisreboucas/
 
 
