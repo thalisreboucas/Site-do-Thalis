@@ -2,7 +2,7 @@
 button:
   enable: true
   label: DOWNLOAD MY CV
-  link: '<a href="https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Ir para o Meu Currículo nova página</a>'
+  link: <a href="https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" target="_blank">Ir para o Meu Currículo nova página</a>
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
