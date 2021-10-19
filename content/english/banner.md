@@ -12,8 +12,8 @@ last_name: REBOUÇAS
 occupations:
 - Statistic
 - Data Scientist
-- Data Anlytics
-- Data Janitor
+- Data Analytics
+- Data Hacker
 slider_images:
 - images/slider/slider-1.gif
 - images/slider/slider-2.jpg

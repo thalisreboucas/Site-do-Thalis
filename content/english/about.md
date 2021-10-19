@@ -27,7 +27,7 @@ skill:
   enable: true
   skill_list:
   - name: R
-    percentage: 90%
+    percentage: 91%
   - name: Python
     percentage: 73.2%
   - name: SQL
@@ -35,7 +35,7 @@ skill:
   - name: Power Bi
     percentage: 70%
   - name: Inglês
-    percentage: 70%
+    percentage: 71.5%
    
   title: SKILL
 title: CONHEÇA MAIS <br> SOBRE MIM
