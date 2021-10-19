@@ -3,7 +3,7 @@ categories:
 - R
 - Database
 - Bookdown
-date: "2021-06-10T12:14:34+03:00"
+date: "2021-06-06T12:14:34+03:00"
 description: ForecastingCorn.
 draft: false
 image: images/portfolio/forecasting.jpg
