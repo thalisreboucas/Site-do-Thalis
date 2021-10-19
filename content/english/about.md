@@ -22,7 +22,7 @@ experience:
     duration:  2019 - 2020.2
     name: Assessor de Projetos
   title: EXPERIÊNCIA
-image: images/backgrounds/portrait.png
+image: images/backgrounds/eu_2.jpg
 skill:
   enable: true
   skill_list:
