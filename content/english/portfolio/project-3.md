@@ -3,7 +3,7 @@ categories:
 - R
 - Bookdown
 date: "2021-10-19T12:14:34+03:00"
-description: Infe Book.
+description: Infer Book.
 draft: false
 image: images/portfolio/inf.jpg
 project_info:
@@ -11,14 +11,14 @@ project_info:
   icon: fas fa-link
   name: Link do Projeto
 
-title: Inferência Book
+title: Infer Book
 ---
 
 
 
 #### Projeto detalhe
 
-Livro feito por mim para ajudar na cadeira de inferênciaaaaah !!1
+Livro feito por mim para ajudar na cadeira de inferênciaaaaah !!!!
 
 
 #### Requirementos para o Projeto
