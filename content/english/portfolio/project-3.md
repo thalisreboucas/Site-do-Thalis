@@ -23,4 +23,4 @@ Livro feito por mim para ajudar na cadeira de inferênciaaaaah !!!!
 
 #### Requirementos para o Projeto
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
+Foi Feito no R na versão 4.1.0, usando o Rstudio e o packges Rmarkdown para fazer o Bookdown.
