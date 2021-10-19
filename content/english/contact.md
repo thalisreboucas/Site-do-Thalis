@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/contact-us-bg.jpg
+bg_image: images/backgrounds/email.jpg
 custom_attributes: ""
 custom_class: ""
 custom_css: ""

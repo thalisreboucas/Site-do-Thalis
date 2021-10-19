@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/need-service.jpg
+bg_image: images/backgrounds/duvida.jpg
 button:
   enable: true
   label: Veja , meu Github !
