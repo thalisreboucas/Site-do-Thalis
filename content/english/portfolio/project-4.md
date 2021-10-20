@@ -16,11 +16,11 @@ title: Report Theme R
 
 
 
-#### Projeto detalhe
+#### Descrição
 
 Template para relatorio com um .css customizado para mudar o tema do Material do Packger rmdformart.
 
 
-#### Requirementos para o Projeto
+#### Requerimentos
 
 Foi Feito no R na versão 4.1.0, usando o Rstudio e o packges Rmarkdown e rmdformart.

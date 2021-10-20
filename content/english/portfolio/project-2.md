@@ -20,6 +20,6 @@ title: C0des Python
 Neste link temos um caminho até meu github onde temos algums Python explicados do básico a modelos de Machine learning PRONTOSSS !!
 
 
-#### Requirimentos
+#### Requerimentos
 
 É importante saber Python e saber como mexer no JupyterNotebook =) 

@@ -17,7 +17,7 @@ title: Previsão do Preço do Milho
 
 
 
-#### Projeto detalhe
+#### Detalhe do Projeto 
 
 Sabemos o quão legal é tentar prever o que vai acontecer no futuro com isso eu fiz uma previsão para uma empresa com o preço do milho para ver como aconteceria isso nos próximos 6 meses.
 

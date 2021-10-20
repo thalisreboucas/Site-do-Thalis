@@ -16,11 +16,11 @@ title: Infer Book
 
 
 
-#### Projeto detalhe
+#### Descrição
 
 Livro feito por mim para ajudar na cadeira de inferênciaaaaah !!!!
 
 
-#### Requirementos para o Projeto
+#### Requerimentos
 
 Foi Feito no R na versão 4.1.0, usando o Rstudio e o packges Rmarkdown para fazer o Bookdown.
