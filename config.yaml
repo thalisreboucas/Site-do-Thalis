@@ -4,7 +4,7 @@ theme: somrat
 paginate: '5'
 summaryLength: '10'
 disableLanguages: []
-googleAnalytics: ''
+googleAnalytics: 'UA-29048471-2'
 disqusShortname: ''
 outputs:
   home: HTML
