@@ -6,9 +6,9 @@ service_list:
 - image: images/icons/web-development.png
   name: R/Python Programing
 - image: images/icons/graphic-design.png
-  name: Do Dashboard
-- image: images/icons/dbms.png
-  name: Database Janitor
+  name:  Dashboards
+- image: images/icons/ml.png
+  name: Machine Learning
 - image: images/icons/software-development.png
   name: Data Mining
 - image: images/icons/marketing.png
