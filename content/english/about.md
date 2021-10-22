@@ -2,7 +2,7 @@
 button:
   enable: true
   label: DOWNLOAD MY CV
-  link: "https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" 
+  link: "https://export-download.canva.com/j7L70/DAEgK7j7L70/645/0-10572554008.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20211022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211022T084229Z&X-Amz-Expires=24798&X-Amz-Signature=0750397638f2a25864af5b3b67de42aae562959722e37ee2d6b00abb1ffabf83&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo.pdf&response-expires=Fri%2C%2022%20Oct%202021%2015%3A35%3A47%20GMT" 
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
