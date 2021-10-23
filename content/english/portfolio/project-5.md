@@ -22,6 +22,6 @@ title: Oráculo  ChatBot
 
 ### Descrição
 
-Esse é chatbot para responder algumas dúvidas.
+Esse é chatbot para responder algumas dúvidas. Digite "Olá." para começar , espero que goste.
 
 
