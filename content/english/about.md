@@ -2,7 +2,7 @@
 button:
   enable: true
   label: DOWNLOAD MY CV
-  link: "https://export-download.canva.com/j7L70/DAEgK7j7L70/661/0-10638337691.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20211022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211022T193633Z&X-Amz-Expires=74164&X-Amz-Signature=331932bcb474ebfae2b90a84cd51816de7206526a0fe615315ed7e1b7b1eef1e&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo.pdf&response-expires=Sat%2C%2023%20Oct%202021%2016%3A12%3A37%20GMT" 
+  link: "https://export-download.canva.com/j7L70/DAEgK7j7L70/676/0-10658475775.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20211023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211023T110223Z&X-Amz-Expires=50367&X-Amz-Signature=b67fd3dbe52e06f94b945c8c1d0c6ff35edbdf5e575e226aad87554ce994fa49&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo.pdf&response-expires=Sun%2C%2024%20Oct%202021%2001%3A01%3A50%20GMT" 
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
