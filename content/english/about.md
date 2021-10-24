@@ -2,7 +2,7 @@
 button:
   enable: true
   label: DOWNLOAD MY CV
-  link: "https://export-download.canva.com/j7L70/DAEgK7j7L70/689/0-10661954617.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20211023%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211023T222458Z&X-Amz-Expires=17788&X-Amz-Signature=d430a25b397926252dd1e33d940590b9c692466aa10d23e54a1dea5772f51a13&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27Curriculo.pdf&response-expires=Sun%2C%2024%20Oct%202021%2003%3A21%3A26%20GMT" 
+  link: "https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" 
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
@@ -41,5 +41,5 @@ skill:
 title: CONHEÇA MAIS <br> SOBRE MIM
 ---
 
-Eu me chamo Thalis, tenho 21 anos, nasci em São Gonçalo no Rio de janeiro, quando eu completei 10 anos vim morar em Fortaleza,Ceará, onde moro atualmente.Conclui o 3º ano em 2017 no Colégio Militar de Fortaleza e atualmente faço Estatítica <3 na Universidade Federal do Ceará. Além disso a matéria que eu amo probabilidade por conta do Professor Maurício  Mota , gosto de fazer análise de dados , projetar machine learning , assitir series e assitir o meu Flamengo amassando os adversários ,efim ... 😊 <br>
+Eu me chamo Thalis, tenho 21 anos, nasci em São Gonçalo no Rio de janeiro, quando eu completei 10 anos vim morar em Fortaleza,Ceará, onde moro atualmente.Conclui o 3º ano em 2017 no Colégio Militar de Fortaleza e atualmente faço Estatítica <3 na Universidade Federal do Ceará. Além disso a matéria que eu amo probabilidade por conta do Professor Maurício  Mota , gosto de fazer análise de dados , projetar machine learning , assitir series e assitir o meu Flamengo amassando os adversários ,enfim ... 😊 <br>
   Bem vindos!!
