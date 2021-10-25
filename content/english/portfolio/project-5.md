@@ -10,21 +10,16 @@ project_info:
   icon: fas fa-link
   name: Link do Projeto
 
-title: Oráculo  ChatBot
+title: Oráculo  ChatBot 
 ---
 
 <!DOCTYPE html><html><body><iframe src="https://web.powerva.microsoft.com/environments/Default-b591ae54-33c2-4589-be66-9021a4196c7c/bots/new_bot_5793bd049b574450a689d639338d565c/webchat" frameborder="0" style="width: 688px; height: 500px;"> </iframe> </body></html>
 
 
 
-
-
-
 ### Descrição
 
-Esse é chatbot para responder algumas dúvidas. Digite "Olá." para começar , espero que goste.
-
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
+Esse é chatbot para responder algumas dúvidas. Digite "Olá." para começar , espero que goste. Esse Chatbot funciona apenas na lingua portuguesas.
 
 
 <div id="disqus_thread"></div>
