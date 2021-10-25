@@ -25,9 +25,6 @@ Template para relatorio com um .css customizado para mudar o tema do Material do
 
 Foi Feito no R na versão 4.1.0, usando o Rstudio e o packges Rmarkdown e rmdformart.
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
-
-
 <div id="disqus_thread"></div>
 <script>
     /**
