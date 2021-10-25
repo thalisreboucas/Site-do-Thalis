@@ -24,8 +24,6 @@ title: Oráculo  ChatBot
 
 Esse é chatbot para responder algumas dúvidas. Digite "Olá." para começar , espero que goste.
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
-
 
 <div id="disqus_thread"></div>
 <script>

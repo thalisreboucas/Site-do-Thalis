@@ -57,7 +57,7 @@ Languages:
     contentDir: content/english
     copyright: <img src="images/logo_w.png" width= 7% height=5% />  <br> Copyright &copy; 2021 a hugo theme by [somrat](https://somrat.netlify.com)
     home: Home
-    languageCode: en-us
+    languageCode: pt-br
     languageName: PT
     menu:
        main:

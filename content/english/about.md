@@ -1,7 +1,7 @@
 ---
 button:
   enable: true
-  label: DOWNLOAD MY CV
+  label: Baixe meu CV
   link: "https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" 
 custom_attributes: ""
 custom_class: ""
