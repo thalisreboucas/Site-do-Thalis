@@ -7,6 +7,6 @@ email: Email
 form_action: "https://formsubmit.co/thalisreboucasdeoliveira@gmail.com"
 message: Mensagem 
 name: Nome
-submit: Submit
+submit: Enviar
 title: Diga Olá!
 ---

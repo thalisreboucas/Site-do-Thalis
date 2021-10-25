@@ -19,7 +19,7 @@ experience:
     name: Diretor de Projetos
   - company: Empresa Júnior Gauss
     content: Entrei como assessor da Empresa Júnior em setembro do ano de 2019, e participei de algumas consultorias e  fiz alguns trabalhos na empresa.
-    duration:  2019 - 2020.2
+    duration:  2019.2 - 2020.2
     name: Assessor de Projetos
   title: EXPERIÊNCIA
 image: images/backgrounds/eu_2.jpg
