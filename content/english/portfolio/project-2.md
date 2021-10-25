@@ -24,8 +24,6 @@ Neste link temos um caminho até meu github onde temos algums Python explicados 
 
 É importante saber Python e saber como mexer no JupyterNotebook =) 
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados
-
 
 <div id="disqus_thread"></div>
 <script>
