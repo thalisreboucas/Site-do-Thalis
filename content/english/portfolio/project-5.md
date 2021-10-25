@@ -19,7 +19,9 @@ title: Oráculo  ChatBot
 
 ### Descrição
 
+
 Esse é chatbot para responder algumas dúvidas. Digite "Olá." para começar , espero que goste. Esse Chatbot funciona apenas na lingua portuguesas.
+
 
 
 <div id="disqus_thread"></div>
