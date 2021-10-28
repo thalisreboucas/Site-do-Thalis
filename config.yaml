@@ -55,7 +55,7 @@ params:
 Languages:
   en:
     contentDir: content/english
-    copyright: <img src="images/logo_w.png" width= 7% height=5% />  <br> Copyright &copy; 2021 a hugo theme by [somrat](https://somrat.netlify.com)
+    copyright: <div> <img src="images/logo_w.png" width= 7% height=5% /> <br> Copyright &copy; 2021 a hugo theme by <a href="https://somrat.netlify.com">somrat</a></div>  
     home: Home
     languageCode: pt-br
     languageName: PT
