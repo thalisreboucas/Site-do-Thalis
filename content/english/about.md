@@ -37,7 +37,7 @@ skill:
   - name: Inglês
     percentage: 71.5%
    
-  title: SKILL
+  title: CONHECIMENTOS
 title: CONHEÇA MAIS <br> SOBRE MIM
 ---
 
