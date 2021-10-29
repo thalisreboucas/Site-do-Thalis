@@ -2,7 +2,7 @@
 button:
   enable: true
   label: Baixe meu CV
-  link: "https://www.canva.com/design/DAEgK7j7L70/Rnzz3pIBSbQXlx2rDD6eDA/view?utm_content=DAEgK7j7L70&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton" 
+  link: "https://thalisreboucas.github.io/curriculo/" 
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
@@ -34,6 +34,8 @@ skill:
     percentage: 53.5%
   - name: Power Bi
     percentage: 70%
+  - name: Latex
+    percentage: 98.7%
   - name: Inglês
     percentage: 71.5%
    
