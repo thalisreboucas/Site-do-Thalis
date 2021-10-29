@@ -15,7 +15,7 @@ occupations:
 - Data Analytics
 - Data Hacker
 slider_images:
-- images/slider/slider-4.gif
+- images/slider/slider-01.gif
 - images/slider/slider-5.jpg
 - images/slider/coding.gif
 - images/slider/slider-1.gif
