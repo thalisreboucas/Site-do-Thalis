@@ -15,9 +15,9 @@ occupations:
 - Data Analytics
 - Data Hacker
 slider_images:
-- images/slider/slider.gif
+- images/slider/slider-00.gif
 - images/slider/slider-5.jpg
-- images/slider/coding.gif
+- images/slider/slider-3.jpg
 - images/slider/slider-1.gif
 title: Thalis Rebouças
 ---
