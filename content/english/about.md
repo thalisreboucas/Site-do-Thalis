@@ -34,7 +34,7 @@ skill:
     percentage: 53.5%
   - name: Power Bi
     percentage: 70%
-   - name: Excel
+  - name: Excel
     percentage: 89.7%
   - name: Latex
     percentage: 98.7%
