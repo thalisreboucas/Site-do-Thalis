@@ -10,15 +10,15 @@ experience:
   enable: true
   experience_list:
   - company: Empresa Júnior Gauss
-    content: Virei o Presidente da Empresa Júnior no meio do ano de 2021, e com isso fiquei na parte de organização toda a empresa na parte jurídica  e diretorias da empresa ,além de cuidar do planejamento estratégico .
+    content: Virei o Presidente da Empresa Júnior no meio do ano de 2021, e com isso fiquei na parte de organização toda da empresa na parte jurídica e diretorias da empresa ,além de cuidar do planejamento estratégico.
     duration: 2021.2
     name: Diretor Presidente
   - company: Empresa Júnior Gauss
-    content: Virei Diretor da Empresa Júnior no meio do ano de 2020, e com isso fiquei na parte de organização de consultorias e trabalhos na empresa ,além de cuidar e responder os emails recebidos .
+    content: Virei Diretor da Empresa Júnior no meio do ano de 2020, e com isso fiquei na parte de organização de consultorias e trabalhos da empresa ,além de responder os emails recebidos. Além disso , coordenei alguns trabalhos nesse tempo.
     duration:  2020.2-2021.2
     name: Diretor de Projetos
   - company: Empresa Júnior Gauss
-    content: Entrei como assessor da Empresa Júnior em setembro do ano de 2019, e participei de algumas consultorias e  fiz alguns trabalhos na empresa.
+    content: Entrei como assessor da Empresa Júnior em setembro do ano de 2019, e participei de algumas consultorias e fiz alguns trabalhos na empresa.
     duration:  2019.2 - 2020.2
     name: Assessor de Projetos
   title: EXPERIÊNCIA
@@ -34,6 +34,8 @@ skill:
     percentage: 53.5%
   - name: Power Bi
     percentage: 70%
+  - name: Excel
+    percentage: 89.7%
   - name: Latex
     percentage: 98.7%
   - name: Inglês
