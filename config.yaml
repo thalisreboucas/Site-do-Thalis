@@ -40,7 +40,7 @@ params:
       - link: plugins/owl-carousel/owl.carousel.min.js
   preloader:
     enable: yes
-    preloader: images/preloader.gif
+    preloader: images/load.gif
   social:
     - icon: fab fa-twitter
       link: https://twitter.com/ThalisReboucas
