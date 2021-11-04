@@ -45,7 +45,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2B2C2F;
+  background-color: #ffffff;
   z-index: 99999;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -618,7 +618,7 @@ input:checked+label span:last-child {
 }
 
 .menu-container-transparent {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .desktop-menu-logo img {
