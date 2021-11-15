@@ -10,7 +10,7 @@ image: images/portfolio/forecasting.jpg
 project_info:
 - content: https://thalisreboucas.github.io/Forecastingcorn/
   icon: fas fa-link
-  name: Link do Projeto
+  name: Visualizar Projeto
 
 title: Previsão do Preço do Milho
 ---
@@ -21,11 +21,16 @@ title: Previsão do Preço do Milho
 
 Sabemos o quão legal é tentar prever o que vai acontecer no futuro com isso eu fiz uma previsão para uma empresa com o preço do milho para ver como aconteceria isso nos próximos 6 meses. Preciso Atualizar '-' .
 
-
 #### Requirementos para o Projeto
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de Forecastings e Manipulação de dados. O Banco de dados está disponivel [aqui](https://www.cepea.esalq.usp.br/br/indicador/milho.aspx)
+Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packages de Forecastings e Manipulação de dados. O Banco de dados está disponivel [aqui](https://www.cepea.esalq.usp.br/br/indicador/milho.aspx)
 
+
+#### Repositório no Github
+
+<a href="https://github.com/thalisreboucas/Forecastingcorn"  >
+    <img alt="Github" src="https://img.shields.io/badge/Forecastingcorn-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>
 
 <div id="disqus_thread"></div>
 <script>

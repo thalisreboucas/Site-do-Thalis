@@ -11,7 +11,7 @@ image: images/portfolio/dist.png
 project_info:
 - content: https://thalisreboucas.github.io/distrib-with-r/
   icon: fas fa-link
-  name: Link do Projeto
+  name: Visualizar Projeto
 
 title: Distrib with R
 ---
@@ -21,14 +21,19 @@ title: Distrib with R
 
 Como fazer gráfico de distribuições de probabilidade em R.
 
-- Pode ser feito com qualquer distribuição só mudar o a function com a distribuição desejada ;)
+- Pode ser feito com qualquer distribuição só mudar a `function` para a distribuição desejada ;)
 
 
 #### Requirementos para o Projeto
 
 Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packges de GGplot e Plotly. 
 
+#### Repositório no Github
 
+<a href="https://github.com/thalisreboucas/distrib-with-r"  >
+    <img alt="Github" src="https://img.shields.io/badge/distribR-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>
+    
 <div id="disqus_thread"></div>
 <script>
     /**

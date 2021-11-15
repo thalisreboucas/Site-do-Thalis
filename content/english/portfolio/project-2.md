@@ -9,8 +9,8 @@ image: images/portfolio/item2.jpg
 project_info:
 - content: https://github.com/thalisreboucas/Python-codes-ML
   icon: fas fa-link
-  name: Project Link
-
+  name: Visualizar Projeto
+    
 title: C0des Python
 ---
 
@@ -23,6 +23,12 @@ Neste link temos um caminho até meu github onde temos algums Python explicados 
 #### Requerimentos
 
 É importante saber Python e saber como mexer no JupyterNotebook =) 
+
+#### Repositório no Github
+
+<a href="https://github.com/thalisreboucas/Python-codes-ML"  >
+    <img alt="Github" src="https://img.shields.io/badge/C0desPython-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>
 
 
 <div id="disqus_thread"></div>

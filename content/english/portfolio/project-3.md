@@ -9,7 +9,7 @@ image: images/portfolio/inf.jpg
 project_info:
 - content: https://thalisreboucas.github.io/my_theme/
   icon: fas fa-link
-  name: Link do Projeto
+  name: Visualizar Projeto
 
 title: Infer Book
 ---
@@ -19,11 +19,18 @@ title: Infer Book
 #### Descrição
 
 Livro feito por mim para ajudar na cadeira de inferênciaaaaah !!!!
-
+PS* Ainda em Desenvolvimento. 
 
 #### Requerimentos
 
-Foi Feito no R na versão 4.1.0, usando o Rstudio e o packges Rmarkdown para fazer o Bookdown.
+Foi Feito no R na versão 4.1.0, usando o Rstudio e o packager Rmarkdown para fazer o Bookdown.
+
+#### Repositório no Github
+
+<a href="https://github.com/thalisreboucas/my_theme"  >
+    <img alt="Github" src="https://img.shields.io/badge/InferBook-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>
+
 
 <div id="disqus_thread"></div>
 <script>
