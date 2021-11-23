@@ -10,9 +10,9 @@ custom_css: ""
 first_name: Thalis  
 last_name: REBOUÇAS 
 occupations:
-- Statistic
-- Data Scientist
-- Data Analytics
+- Estatístico 
+- Cientista de Dados
+- Analista de Dados
 - Data Hacker
 slider_images:
 - images/slider/slider_01.jpg
