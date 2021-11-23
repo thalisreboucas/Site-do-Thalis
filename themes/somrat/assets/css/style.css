@@ -1647,7 +1647,7 @@ textarea.form-control::-webkit-input-placeholder,
 }
 
 .footer-bg {
-  background-color: #333;
+  background-color: #181616;
 }
 
 .footer hr {
@@ -1722,7 +1722,7 @@ textarea.form-control::-webkit-input-placeholder,
 
 .credit {
   position: absolute;
-  bottom: 15px;
+  bottom: 12px;
   left: 0;
   right: 0;
   text-align: center;
