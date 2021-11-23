@@ -1,7 +1,7 @@
 ---
 button:
   enable: true
-  label: Baixe meu CV
+  label: Baixe meu currículo 
   link: "https://thalisreboucas.github.io/curriculo/" 
 custom_attributes: ""
 custom_class: ""
