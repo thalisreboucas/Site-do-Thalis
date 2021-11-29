@@ -57,12 +57,14 @@ Neste link temos um caminho até meu github onde temos algums Python explicados 
 Caso queira cormpatilhar.
 
 <a href="https://www.facebook.com/sharer/sharer.php?u=https://thalis.netlify.app/portfolio/project-2/">
-	<img width="25" height="25" src="https://cdn-icons.flaticon.com/png/512/1377/premium/1377223.png?token=exp=1638113478~hmac=b3990096f2c9c59e9d8955b41d78c9e5" alt="">
+	<img width="25" height="25" src="/images/icons/facebook.png" alt="">
 </a>
 
+
 <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://thalis.netlify.app/portfolio/project-2/">
-	<img width="25" height="25" src="https://cdn-icons.flaticon.com/png/512/1377/premium/1377213.png?token=exp=1638113557~hmac=0ee66e0964c2217f890ed351bcb687ef" alt="">
+	<img width="25" height="25" src="/images/icons/linkedin.png" alt="">
 </a>
-<a class="pasb bt-share-whatsapp" href="https://api.whatsapp.com/send?text=https://thalis.netlify.app/portfolio/project-2/" target="_blank" rel="noopener external nofollow" aria-label="Olha que top !!">
-<img width="25" height="25" src="https://cdn-icons.flaticon.com/png/512/1377/premium/1377218.png?token=exp=1638113557~hmac=ae986dfbe02185602d3b02cbdda39266" alt="Compartilhe no WhatsApp">
+
+<a href="https://api.whatsapp.com/send?text=https://thalis.netlify.app/portfolio/project-2/" target="_blank" rel="noopener external nofollow" aria-label="Olha que top !!">
+<img width="25" height="25"  src="/images/icons/whatsapp.png" alt="Compartilhe no WhatsApp">
 </a>
