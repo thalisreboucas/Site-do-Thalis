@@ -21,7 +21,7 @@ body {
 
 
 .content a:hover {
-  border-bottom: 1px solid #212121;
+  border-bottom: 0px solid #212121;
   text-decoration: none;
 }
 
