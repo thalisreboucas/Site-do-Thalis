@@ -604,7 +604,7 @@ input:checked+label span:last-child {
   left: 0;
   right: 0;
   height: 55px;
-  background: #282727;
+    background: #161616;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -884,7 +884,7 @@ input:checked+label span:last-child {
 
 .about-me-text h1 {
   position: relative;
-  color: #6f6f6f;
+  color: #303030;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -896,7 +896,7 @@ input:checked+label span:last-child {
   top: -8px;
   width: 47px;
   height: 5px;
-  background: #6f6f6f;
+  background: #303030;
 }
 
 .about-me-text p {
@@ -1109,7 +1109,7 @@ ul.experience-chart h4 {
 }
 
 .services-heading h1 {
-  color: #6f6f6f;
+  color: #303030  ;
   text-align: center;
   font-weight: 700;
   letter-spacing: 4px;
@@ -1126,7 +1126,7 @@ ul.experience-chart h4 {
   margin: auto;
   width: 70px;
   height: 5px;
-  background: #6f6f6f;
+  background: #303030;
 }
 
 .services-icon {
@@ -1232,7 +1232,7 @@ ul.experience-chart h4 {
 }
 
 .portfolio h1 {
-  color: #6f6f6f;
+  color: #303030;
   text-align: center;
   font-weight: 700;
   letter-spacing: 4px;
@@ -1242,7 +1242,7 @@ ul.experience-chart h4 {
 .portfolio h1:before {
   content: "";
   height: 5px;
-  background: #6f6f6f;
+  background: #303030;
   position: absolute;
   top: -15px;
   left: 46.5%;

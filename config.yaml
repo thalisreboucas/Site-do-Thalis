@@ -57,7 +57,7 @@ params:
 Languages:
   en:
     contentDir: content/english
-    copyright:  Copyright &copy; Thalis 2021 . Todos os direitos reservados. <br>  Tema do <a href="https://somrat.netlify.com">somrat</a>.Site feito em Hugo com <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>.    
+    copyright:  <small>Copyright &copy; Thalis 2021 .Todos os direitos reservados.</small> <br>  <Small> Tema do <a href="https://somrat.netlify.com">somrat</a>. Site feito em Hugo com <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a>.</Small>    
     home: Home
     languageCode: pt-br
     languageName: PT
