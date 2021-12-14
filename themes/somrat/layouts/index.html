@@ -13,6 +13,24 @@
   <div class="slider-next-button slider-button">
     <i class="fa fa-angle-right"></i>
   </div>
+  <div> 
+<ul class="home-social">
+                    <li>
+                        <a href="http://facebook.com/ueekdigital" rel="noopener" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+           
+                </ul>
+  </div>  
+  
+<div class="home-content__scroll">
+                                    <a href="#about" class="scroll-link smoothscroll">
+                                        <span>Role a Página</span>
+                                    </a>
+                                </div>
+                                
   <div class="owl-carousel owl-full-width owl-theme" id="background-slide">
     {{ range .Params.slider_images }}
     <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
@@ -41,6 +59,9 @@
       </div>
     </div>
   </div>
+
+
+
 
   <!-- full nav start -->
   <div class="navigation-icon">
@@ -84,6 +105,9 @@
 </section>
 {{ end }}
 <!-- End Header -->
+
+
+
 
 <!-- Start Menu -->
 <section class="menu" id="menu">
@@ -198,6 +222,7 @@
       </div>
       {{ end }}
     </div>
+
 
     <div class="row experience-skill">
       {{ with .Params.experience }}
@@ -442,7 +467,7 @@
           {{ end }}
         </ul>
         <div class="to-top">
-          <a href="#home"><i class="fa fa-chevron-up"></i></a>
+          <a href="#home"> <i class="fas fa-angle-double-up"></i></a>
         </div>
         <div class="credit content">
           {{ site.Params.copyright | markdownify }}

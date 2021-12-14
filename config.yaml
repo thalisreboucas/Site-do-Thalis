@@ -29,6 +29,8 @@ params:
       - link: plugins/owl-carousel/owl.carousel.min.css
       - link: plugins/owl-carousel/owl.theme.default.min.css
       - link: plugins/text-animation/text-animation.css
+      - link: plugins/slick/slick.css
+      - link: plugins/themify-icons/themify-icons.css
     js:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js
@@ -42,15 +44,15 @@ params:
     enable: yes
     preloader: images/loading.gif
   social:
-    - icon: fab fa-twitter
+    - icon: ti-twitter-alt
       link: https://twitter.com/ThalisReboucas
-    - icon: fab fa-facebook-f
+    - icon: ti-facebook
       link: https://www.facebook.com/thalisreboucas
-    - icon: fab fa-instagram
+    - icon: ti-instagram
       link: https://www.instagram.com/thalisreboucas
-    - icon: fab fa-github
+    - icon: ti-github
       link: https://github.com/thalisreboucas
-    - icon: fab fa-linkedin
+    - icon: ti-linkedin
       link: https://www.linkedin.com/in/thalisreboucas
 Languages:
   en:
