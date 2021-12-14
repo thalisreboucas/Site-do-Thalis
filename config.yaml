@@ -1,6 +1,5 @@
 baseURL: https://thalis.netlify.app/
 title: Thalis Rebouças
-theme: somrat
 paginate: '5'
 summaryLength: '10'
 disableLanguages: []
