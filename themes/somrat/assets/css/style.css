@@ -700,14 +700,13 @@ input:checked+label span:last-child {
 
 .home-content__scroll {
     position: absolute;
-    right: 37rem;
-    bottom: 4.56rem;
+    right: 46rem;
+    bottom: 2.56rem;
 }
 
 .home-content__scroll a {
     font-family: "Rubik", sans-serif;
     font-size: 1rem;
-    text-transform: uppercase;
     letter-spacing: .1rem;
     color: #FFFFFF;
     position: relative;
@@ -716,35 +715,14 @@ input:checked+label span:last-child {
     padding-left: 1.5rem;
 }
 
-.home-content__scroll a::before {
-    border-bottom: 0px solid #fff;
-    border-right: 0px solid #fff;
-    content: '';
-    display: block;
-    height: 10px;
-    width: 10px;
-    margin-top: -5px;
-    pointer-events: none;
-    position: absolute;
-    left: 13.2rem;
-    top: 50%;
-    -webkit-transform-origin: 66% 66%;
-    -ms-transform-origin: 66% 66%;
-    transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-}
 
 .home-content__line {
     display: block;
-    width: 100px;
+    width: 68px;
     border: 1px solid #fff;
     position: absolute;
-    right: 37rem;
-    bottom: 5.2rem;
+    right: 46.2rem;
+    bottom: 3.2rem;
 }
 
 
