@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/email.jpg
+bg_image: images/backgrounds/bg.jpg
 custom_attributes: ""
 custom_class: ""
 custom_css: ""

@@ -1,5 +1,5 @@
 baseURL: https://thalis.netlify.app/
-title: Thalis R
+title: Thalis Rebouças
 theme: somrat
 paginate: '5'
 summaryLength: '10'
@@ -74,7 +74,7 @@ Languages:
           pre: '#'
           url: service
           weight: 3
-        - name: Portfolio
+        - name: Blog
           pre: '#'
           url: portfolio
           weight: 4

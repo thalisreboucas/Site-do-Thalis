@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/duvida.jpg
+bg_image: images/backgrounds/black-bg.png
 button:
   enable: true
   label: Então, veja meu Github !
