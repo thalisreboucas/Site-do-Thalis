@@ -48,9 +48,6 @@
     </div>
   </div>
 
-
-
-
   <!-- full nav start -->
   <div class="navigation-icon">
     <input id="burger" type="checkbox" />
@@ -93,9 +90,6 @@
 </section>
 {{ end }}
 <!-- End Header -->
-
-
-
 
 <!-- Start Menu -->
 <section class="menu" id="menu">
@@ -257,7 +251,7 @@
 {{ end }}
 <!-- End About Me -->
 
-<!-- Start Services -->
+<!-- Start Habilidades -->
 {{ with .GetPage "service" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="services {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="service">
@@ -285,7 +279,7 @@
   </div>
 </section>
 {{ end }}
-<!-- End Services -->
+<!-- End Habilidades -->
 
 <!-- call to action -->
 {{ with .GetPage "call-to-action" }}
@@ -304,18 +298,18 @@
 {{ end }}
 <!-- end call to action -->
 
-<!-- Start Portfolio -->
-{{ with .GetPage "portfolio"}}
+<!-- Start blog -->
+{{ with .GetPage "blog"}}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="portfolio {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="portfolio">
   <div class="container-fluid text-center">
     <div class="row portfolio-holder text-left">
       <div class="col-12 text-center">
-        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title }}</h1>
+        <h1 class="wow fadeInUp" data-wow-duration="1.5s"><small>Últimas do </small> <br> Blog</h1>
         <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
           <div class="btn-group btn-group-toggle portfolio-navigation" data-toggle="buttons">
             <label class="btn btn-sm btn-primary active hvr-sweep-to-right">
-              <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+              <input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
             </label>
             {{ $categories := slice }}
             {{ range .Data.Pages }}
@@ -337,15 +331,15 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item"
             data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
             <div class="item-holder">
-              <a class="image-pop" href="{{ .Params.image | absURL }}" title="{{ .Title | markdownify }}">
+              <a class="image" href="{{.Permalink}}" title="{{ .Title | markdownify }}">
                  <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
               </a>
               <div class="item-caption">
-                <h2 class="mt-2"><a class="text-white" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h2>
+                <h4 class="mt-2"><a class="text-white" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h4>
                 {{ range .Params.categories }}
                 <p class="mb-0 text-light">{{ . | title }}</p>
                 {{ end }}
-                <div class="item-created text-light">{{ .PublishDate.Format "02 Jan, 06" }}</div>
+                <div class="item-created text-light">{{ .PublishDate.Format "02/01/2006" }}</div>
               </div>
             </div>
           </div>
@@ -353,7 +347,7 @@
         </div>
         {{ if gt (len .Data.Pages) 6}}
         <div class="text-center wow fadeInUp mt-4" data-wow-duration="1.5s">
-          <a href="{{`portfolio` | absURL}}" class="btn btn-primary">See More</a>
+          <a href="{{`portfolio` | absURL}}" class="btn btn-primary">Carregar Mais</a>
         </div>
         {{ end }}
       </div>
@@ -361,34 +355,9 @@
   </div>
 </section>
 {{ end }}
-<!-- End Portfolio -->
+<!-- End blog -->
 
-<!-- Start Testimonials -->
-{{ with .GetPage "testimonial"}}
-<style>{{.Params.custom_css | safeCSS}}</style>
-<section class="testimonials {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="testimonial">
-  <div class="container">
-    <div class="row">
-      <div class="testimonials-container col-lg-8 offset-lg-2">
-        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify }}</h1>
-        <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
-          {{ range .Params.testimonial_slider }}
-          <div class="single-testimonial">
-            <div class="testimonial-holder">
-              <img class="img-fluid" src="{{ .image | absURL }}" alt="{{ .name }}">
-              <h2>{{ .name }}</h2>
-              <span>{{ .designation | markdownify }}</span>
-              <p><i class="fa fa-quote-left"></i> {{ .content | markdownify }} <i class="fa fa-quote-right"></i></p>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-<!-- End Testimonials -->
+
 
 <!-- funfacts -->
 {{ with .GetPage "funfacts"}}
@@ -455,7 +424,7 @@
           {{ end }}
         </ul>
         <div class="to-top">
-          <a href="#home"> <i class="fas fa-angle-double-up"></i></a>
+          <a href="#home"> <i class="ti-angle-up"></i></a>
         </div>
         <div class="credit content">
           {{ site.Params.copyright | markdownify }}
