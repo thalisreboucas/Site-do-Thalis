@@ -13,23 +13,6 @@
   <div class="slider-next-button slider-button">
     <i class="fa fa-angle-right"></i>
   </div>
-<div class="home-social"> <ul>
-                    <li>
-                        <a href="http://facebook.com/ueekdigital" rel="noopener" target="_blank">
-                            <i class="fa fa-facebook"></i>
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-           
-                </ul>
-  </div>  
-  
-<div class="home-content__scroll">
-                                    <a href="#about" class="scroll-link smoothscroll">
-                                        <span>Role a Página</span>
-                                    </a>
-                                </div>
-                                
   <div class="owl-carousel owl-full-width owl-theme" id="background-slide">
     {{ range .Params.slider_images }}
     <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
@@ -55,6 +38,12 @@
           {{ end }}
           {{ end }}
         </div>
+        <div class="home-content__scroll">
+                                    <a href="#about" class="scroll-link smoothscroll">
+                                        <span><small>Role para Baixo para<br> ver mais </small> </span>
+                                    </a>
+                                </div>
+                                <div class="home-content__line"></div>
       </div>
     </div>
   </div>
