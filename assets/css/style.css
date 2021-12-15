@@ -2446,3 +2446,7 @@ left: 100px;
 #redes ul li a:hover{
   color: #999;
 }
+
+#animated-icon:hover{
+  color: #999;
+}

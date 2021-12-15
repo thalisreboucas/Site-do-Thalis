@@ -79,16 +79,16 @@
             <div class="fulscreen-nav">
               <ul class="list-inline fullscreen-nav-holder">
                 {{ range site.Menus.main }}
-                <li><a class="text-uppercase"
+                <li><a id="" class="text-uppercase hvr-underline-from-left 1"
                     href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
                 </li>
                 {{ end }}
               </ul>
             </div>
-            <div class="full-nav-icon-holder">
+            <div  class="full-nav-icon-holder">
               <ul class="full-nav-icons list-inline">
                 {{ range site.Params.social }}
-                <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+                <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
                 {{ end }}
               </ul>
             </div>
@@ -426,17 +426,17 @@
       </div>
     </div>
     <div class="row">
-      <div class="footer col-lg-10 offset-lg-1">
+      <div  class="footer col-lg-10 offset-lg-1">
         <hr>
-        <ul class="footer-icons list-inline">
+        <ul  class="footer-icons list-inline" >
           {{ range site.Params.social }}
-          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         <div class="to-top">
           <a href="#home"> <i class="ti-angle-up"></i></a>
         </div>
-        <div><img src="images/favicon.png" style="float;width:50px" id="logoimg"> </div>
+        <div ><img src="images/favicon.png" style="float;width:50px" id="logoimg"> </div>
         <div class="credit content">
           {{ site.Params.copyright | markdownify }}
         </div>
