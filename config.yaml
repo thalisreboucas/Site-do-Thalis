@@ -17,7 +17,7 @@ params:
   favicon: images/favicon.png
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
-  logo_width: 150px
+  logo_width: 100px
   plugins:
     css:
       - link: plugins/bootstrap/bootstrap.min.css
