@@ -700,8 +700,8 @@ input:checked+label span:last-child {
 
 .home-content__scroll {
     position: absolute;
-    right: 46rem;
-    bottom: 2.56rem;
+    right: -190px;
+    bottom: 40px;
 }
 
 .home-content__scroll a {
@@ -721,7 +721,7 @@ input:checked+label span:last-child {
     width: 68px;
     border: 1px solid #fff;
     position: absolute;
-    right: 46.2rem;
+    right: -190px;
     bottom: 3.2rem;
 }
 
