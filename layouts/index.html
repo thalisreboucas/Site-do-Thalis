@@ -88,7 +88,7 @@
             <div class="full-nav-icon-holder">
               <ul class="full-nav-icons list-inline">
                 {{ range site.Params.social }}
-                <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+                <li><a href="{{ .link | safeURL }}"><small><i class="{{ .icon }}"></i></a></li></small>
                 {{ end }}
               </ul>
             </div>
@@ -291,7 +291,7 @@
 {{ end }}
 <!-- End Habilidades -->
 
-<!-- call to action -->
+<!-- ir para o github -->
 {{ with .GetPage "call-to-action" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section id="cta" class="need-service overlay section-sm wow fadeInUp {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} data-wow-duration="1.5s" style="background-image: url('{{ .Params.bg_image | absURL }}');">
@@ -306,7 +306,7 @@
   </div>
 </section>
 {{ end }}
-<!-- end call to action -->
+<!-- end ir para o github -->
 
 <!-- Start blog -->
 {{ with .GetPage "blog"}}

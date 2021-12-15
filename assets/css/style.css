@@ -2425,17 +2425,20 @@ left: 100px;
 /*--- end utteranc css --*/
 
 #redes {
-	right: 10px;
-	top: 35.5%;
+  font-size: 16px;
+	right: 12px;
+	top: 39%;
 	position: fixed;
 	z-index: 2;
 }
 
 #redes ul li {
+  height: 20px;
+  width: 20px;
 	list-style: none;
 	margin-bottom: 16px;
 	text-align: center;
-	width: 23px;
+	width: 10px;
 }
 
 
