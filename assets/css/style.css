@@ -2443,3 +2443,6 @@ left: 100px;
 }
 
 
+#redes ul li a:hover{
+  color: #999;
+}
