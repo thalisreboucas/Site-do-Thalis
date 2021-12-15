@@ -5,6 +5,7 @@
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="header {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="home">
   <div class="logo">
+    <!-- /social icon -->
     <img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="{{ site.Title }}">
   </div>
   <div class="slider-prev-button slider-button">
@@ -44,10 +45,18 @@
                                     </a>
                                 </div>
           <div class="home-content__line"></div>
+          <!-- social icon -->
+    <div id="redes" class="rightShow">
+    <ul class="list-unstyled ml-10 mt-10 position-relative  ">
+      {{ range site.Params.social }}
+      <li class="mb-3"><a class="text-dark" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      {{ end }}
+    </ul></div>
       </div>
-      
     </div>
   </div>
+
+
 
   <!-- full nav start -->
   <div class="navigation-icon">

@@ -2423,3 +2423,19 @@ left: 100px;
 }
 
 /*--- end utteranc css --*/
+
+#redes {
+	right: 10px;
+	top: 35.5%;
+	position: fixed;
+	z-index: 2;
+}
+
+#redes ul li {
+	list-style: none;
+	margin-bottom: 16px;
+	text-align: center;
+	width: 23px;
+}
+
+
