@@ -48,9 +48,9 @@
           <!-- social icon -->
     <div id="redes" class="rightShow">
     <ul class="list-unstyled ml-10 mt-10 position-relative  ">
-      {{ range site.Params.social }}
-      <li class="mb-3"><a class="text-dark" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
-      {{ end }}
+          {{ range site.Params.social }}
+          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
     </ul></div>
       </div>
     </div>

@@ -2425,9 +2425,10 @@ left: 100px;
 /*--- end utteranc css --*/
 
 #redes {
+  color: #353535;
   font-size: 16px;
 	right: 12px;
-	top: 39%;
+	top: 38.39%;
 	position: fixed;
 	z-index: 2;
 }
