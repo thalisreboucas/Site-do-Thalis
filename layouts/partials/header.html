@@ -18,28 +18,8 @@
         <li class="menu-item menu-item-transparent dark hvr-underline-from-left 1"><a href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
-      <!-- Language List -->
-      {{- if .IsTranslated }}
-      <select id="select-language" onchange="location = this.value;">
-        {{ $siteLanguages := site.Languages}}
-        {{ $pageLang := .Page.Lang}}
-        {{ range .Page.AllTranslations }}
-        {{ $translation := .}}
-        {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-        {{ $selected := false }}
-        {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-        </option>
-        {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </select>
-      {{ end }}
-      <!-- /desktop-menu -->
+      
+<!-- /desktop-menu -->
 
       <!-- mobile-menu -->
       <div class="mobile-menu">

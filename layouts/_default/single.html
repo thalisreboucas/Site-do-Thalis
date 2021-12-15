@@ -47,7 +47,7 @@
           </div>
 
           <div class="widget">
-            <h3 class="widget-title">Related Post</h3>
+            <h3 class="widget-title">Outras Postagens</h3>
             {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
             {{ range first 5 $related }}
             <ul class="list-unstyled widget-list">
@@ -59,7 +59,7 @@
                 {{ end }}
                 <div class="media-body">
                   <h5 class="h6 mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
-                  <small>{{ .PublishDate.Format "January 2, 2006" }}</small>
+                  <small>{{ .PublishDate.Format "02/01/2006" }}</small>
                 </div>
               </li>
             </ul>

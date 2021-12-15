@@ -2407,3 +2407,19 @@ textarea.form-control::-webkit-input-placeholder,
   object-fit: cover;
   margin-right: 10px;
 }
+
+#logoimg {
+  position: absolute; 
+	left: 450px; /* posiciona a 90px para a esquerda */ 
+	top: 80px; /* posiciona a 70px para baixo */
+}
+
+/* --- utteranc css -- */
+
+#utteranc {
+position: relative;
+left: 100px; 
+	top: 10px; 
+}
+
+/*--- end utteranc css --*/

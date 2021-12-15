@@ -9,7 +9,7 @@
     <div class="row wow fadeInUp" data-wow-duration="1.5s">
       {{ $paginator:= .Paginate .Data.Pages }}
       {{ range $paginator.Pages }}
-      <div class="col-lg-4 col-sm-6 mb-4">
+      <div class="col-lg-4 col-sm-4 mb-3">
         <div class="card">
           {{ if .Params.image }} <a class="card-img-wrapper" href="{{.Permalink}}"><img
               src="{{.Params.image | absURL }}" alt="{{.Title}}" class="card-img-top"></a> {{ end }}
