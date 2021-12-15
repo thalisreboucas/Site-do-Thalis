@@ -14,7 +14,7 @@ markup:
 params:
   author: Thalis
   description: Feito por Thalis Rebouças
-  favicon: images/lcon.png
+  favicon: images/favicon.png
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
   logo_width: 150px

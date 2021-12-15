@@ -88,7 +88,7 @@
             <div class="full-nav-icon-holder">
               <ul class="full-nav-icons list-inline">
                 {{ range site.Params.social }}
-                <li><a href="{{ .link | safeURL }}"><small><i class="{{ .icon }}"></i></a></li></small>
+                <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
                 {{ end }}
               </ul>
             </div>
