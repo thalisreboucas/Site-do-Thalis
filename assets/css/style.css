@@ -242,6 +242,9 @@ body {
   transition: all 0.5s;
 }
 
+
+
+
 .slider-prev-button {
   left: 40px;
   transform: translateX(15px);
@@ -698,32 +701,6 @@ input:checked+label span:last-child {
   color: #6f6f6f;
 }
 
-.home-content__scroll {
-    position: absolute;
-    right: -190px;
-    bottom: 40px;
-}
-
-.home-content__scroll a {
-    font-family: "Rubik", sans-serif;
-    font-size: 1rem;
-    letter-spacing: .1rem;
-    color: #FFFFFF;
-    position: relative;
-    display: inline-block;
-    line-height: 1rem;
-    padding-left: 1.5rem;
-}
-
-
-.home-content__line {
-    display: block;
-    width: 68px;
-    border: 1px solid #fff;
-    position: absolute;
-    right: -190px;
-    bottom: 3.2rem;
-}
 
 
 
@@ -2427,7 +2404,7 @@ left: 100px;
 #redes {
   color: #353535;
   font-size: 16px;
-	right: 12px;
+	right: 13px;
 	top: 38.39%;
 	position: fixed;
 	z-index: 2;
