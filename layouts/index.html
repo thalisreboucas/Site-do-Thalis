@@ -5,7 +5,6 @@
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="header {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="home">
   <div class="logo">
-    <!-- /social icon -->
     <img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="{{ site.Title }}">
   </div>
   <div class="slider-prev-button slider-button">
@@ -22,6 +21,11 @@
   </div>
   <div class="container">
     <div class="row content">
+        <div class="home-content__scroll">
+   <a href="#about" class="scroll-link smoothscroll">
+       <span><small>Role a Página para<br> Ver Mais </small> </span>  </a>
+       <div class="home-content__line"></div>
+                                </div>
       <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
         <div class="head-holder">
           <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
