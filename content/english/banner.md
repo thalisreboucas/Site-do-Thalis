@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/background.jpg
+bg_image: images/backgrounds/background.png
 button:
   enable: true
   label: CONTATO
