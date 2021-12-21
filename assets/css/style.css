@@ -210,7 +210,7 @@ body {
 .owl-full-width div {
   height: 100%;
 }
-
+/*
 .header .slider::after,
 .header::after {
   content: '';
@@ -225,6 +225,7 @@ body {
   background: rgba(30, 30, 30, .01);
   z-index: 9;
 }
+
 
 .slider-button {
   position: absolute;
@@ -274,7 +275,7 @@ body {
   top: -6px;
   left: 2px;
 }
-
+*/
 .head-container {
   display: table;
   position: absolute;
