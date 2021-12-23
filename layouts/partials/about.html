@@ -1,0 +1,69 @@
+<!-- Start Sobre mim -->
+{{ with .GetPage "about" }}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="about-me {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="about">
+  <div class="container">
+    <div class="row about-me-holder">
+      <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
+        <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+          <h1>{{ .Title | markdownify }}</h1>
+          <div class="content">{{ .Content | markdownify | emojify }}</div>
+          {{ with .Params.button }}
+          {{ if .enable }}
+          <a href="{{ .link | absURL }}" class="download-cv hvr-icon-hang"> {{ .label }} &nbsp; &nbsp; &nbsp;</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      {{ with .Params.image }}
+      <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s">
+        <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
+      </div>
+      {{ end }}
+    </div>
+
+
+    <div class="row experience-skill">
+      {{ with .Params.experience }}
+      {{ if .enable }}
+      <div class="col-lg-6 col-sm-6 col-11 experience wow fadeInUp" data-wow-duration="1.5s">
+        <h3>{{ .title }}</h3>
+        <ul class="experience-chart">
+          {{ range .experience_list }}
+          <li>
+            <div class="single-experience">
+              <h4>{{ .name | markdownify }}</h4>
+              {{ with .company }} <span>{{ . | markdownify }}</span> {{ end }}
+              {{ with .duration }} <span>{{ . | markdownify }}</span> {{ end }}
+              {{ with .content }} <p>{{ . | markdownify}}</p> {{ end }}
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+      {{ end }}
+
+      {{ with .Params.skill }}
+      {{ if .enable }}
+      <div class="col-lg-6 col-sm-6 col-11 skill wow fadeInUp" data-wow-duration="1.5s">
+        <h3>{{ .title }}</h3>
+        <div class="skill-progress-bar">
+          {{ range .skill_list }}
+          <div class="clearfix">
+            <span class="skillbar-title">{{ .name }}</span>
+            <span class="skill-bar-percent">{{ .percentage }}</span>
+            <div class="skillbar" data-percent="{{ .percentage }}">
+              <div class="skillbar-bar"></div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End Sobre mim -->

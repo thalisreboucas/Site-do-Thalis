@@ -53,6 +53,9 @@ params:
       link: https://github.com/thalisreboucas
     - icon: ti-linkedin
       link: https://www.linkedin.com/in/thalisreboucas
+      
+
+      
 Languages:
   en:
     contentDir: content/english

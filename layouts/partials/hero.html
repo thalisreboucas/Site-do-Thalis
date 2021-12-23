@@ -1,0 +1,149 @@
+<!-- Start Header -->
+{{ with .GetPage "banner" }}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="header {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="home">
+  <div class="logo">
+    <img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="{{ site.Title }}">
+  </div>
+  <div class="slider-prev-button slider-button">
+    <i class="fa fa-angle-left"></i>
+  </div>
+  <div class="slider-next-button slider-button">
+    <i class="fa fa-angle-right"></i>
+  </div>
+    <div id="mouse-scroll">
+			<div class="mouse">
+				<div class="mouse-in"></div>
+			</div>
+		</div>
+  <div class="home-content__line"></div>
+  <div class="owl-carousel owl-full-width owl-theme" id="background-slide">
+    {{ range .Params.slider_images }}
+    <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
+    {{ end }}
+  </div>
+  <div class="container">
+    <div class="row content">
+      <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
+        <div class="head-holder">
+          <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
+          <div class="animated-text">
+            <strong class="cd-headline clip">
+              <span class="cd-words-wrapper">
+                {{ range $index, $elements:= .Params.occupations }}
+                <b {{ if eq $index 0 }} class="is-visible" {{ end }}>{{ . }}</b>
+                {{ end }}
+              </span>
+            </strong>
+          </div>
+          {{ with .Params.button }}
+          {{ if .enable }}
+          <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+               <!-- social icon -->
+    <div id="redes" class="rightShow" >
+    <ul class="list-unstyled ml-10 mt-10">
+          {{ range site.Params.social }}
+          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+    </ul></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- full nav start -->
+  <div class="navigation-icon">
+    <input id="burger" type="checkbox" />
+    <label for="burger" class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="fullscreen-nav-container" style="background-image: url('{{ .Params.bg_image | absURL }}');">
+    <div class="container-fluid">
+      <div class="full-nav-container row">
+        <div class="full-nav-holder">
+          <div class="full-nav-content">
+            <div class="name">
+              {{ with .Params.first_name }}<div class="first-name">{{ . }}</div>{{ end }}
+              {{ with .Params.last_name }}<div class="last-name">{{ . }}</div>{{ end }}
+            </div>
+            <div class="fulscreen-nav">
+              <ul class="list-inline fullscreen-nav-holder">
+                {{ range site.Menus.main }}
+                <li><a id="" class="text-uppercase hvr-underline-from-left 1"
+                    href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+            <div  class="full-nav-icon-holder">
+              <ul class="full-nav-icons list-inline">
+                {{ range site.Params.social }}
+                <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End Header -->
+
+<!-- Start Menu -->
+<section class="menu" id="menu">
+  <nav>
+    <!-- desktop-menu -->
+    <div class="menu-container">
+      <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
+        {{ range site.Menus.main }}
+        <li class="menu-item hvr-underline-from-left 1"><a
+            href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      
+      <!-- /desktop-menu -->
+
+      <!-- mobile-menu -->
+      <div class="mobile-menu">
+        <a class="menu-link">
+          <div class="mobile-menu-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <div class="mobile-menu-logo"><a href="{{site.BaseURL | relLangURL }}"><img class="img-fluid"
+              src="{{ site.Params.logo_dark | absURL }}" alt="{{ site.Title }}"></a>
+        </div>
+        <div class="menu-slider">
+          <nav>
+            <ul class="mobile-menu-list">
+              {{ range site.Menus.main }}
+              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a
+                  href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
+              </li>
+              {{ end }}
+            </ul>
+            
+            <ul class="mobile-menu-icons list-inline">
+              {{ range site.Params.social }}
+              <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+              {{ end }}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- End Menu -->

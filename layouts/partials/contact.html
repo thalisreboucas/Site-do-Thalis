@@ -1,0 +1,53 @@
+
+<!-- Start Contact -->
+{{ with .GetPage "contact"}}
+<style>{{.Params.custom_css | safeCSS}}</style>
+<section class="contact {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} style="background-image: url('{{.Params.bg_image | absURL}}');" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-holder col-lg-8 offset-lg-2 col-sm-8 offset-sm-2">
+        <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .Title | markdownify}}</h1>
+        <form method="POST" action="{{ .Params.form_action }}"data-netlify="true" data-toggle="validator">
+          <div class="form-container row wow fadeInUp" data-wow-duration="1.5s">
+            <div class="form-group col-lg-6">
+              <input class="form-control" type="text" name="username" id="username" placeholder="{{.Params.name}}"
+                required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-lg-6">
+              <input class="form-control" type="email" id="email" name="email" placeholder="{{.Params.email}}" required>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-lg-12">
+              <textarea class="form-control" name="message" id="message" rows="12"
+                placeholder="{{.Params.message}}"></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-lg-12 sub-button">
+              <button class="submit form-control hvr-icon-push" type="submit" value="send"> {{.Params.submit}} </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div  class="footer col-lg-10 offset-lg-1">
+        <hr>
+        <ul  class="footer-icons list-inline" >
+          {{ range site.Params.social }}
+          <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
+        <div class="to-top">
+          <a href="#home"> <i class="ti-angle-up"></i></a>
+        </div>
+        <div ><img src="images/favicon.png" style="float;width:50px" id="logoimg"> </div>
+        <div class="credit content">
+          {{ site.Params.copyright | markdownify }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- End Contact -->
