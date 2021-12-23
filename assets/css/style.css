@@ -113,10 +113,10 @@ body {
 
 .scroll-up {
   position: fixed;
-  right: 0px;
+  right: -13px;
   bottom: 50px;
   text-decoration: none;
-  color: #999;
+  color: #242424;
   cursor: pointer;
   opacity: 0;
   transform: translateY(100px);
@@ -130,19 +130,19 @@ body {
 
 .scroll-up:hover,
 .scroll-up:focus {
-  color: #999;
+  color: #242424;
 }
 
 .scroll-up.hvr-icon-up:before {
   content: "\f077";
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   text-align: center;
   border-radius: 100%;
-  border: 2px solid #999;
+  border: 2px solid #242424;
 }
 
 /*--------------------------------
@@ -2433,10 +2433,10 @@ left: 100px;
 #mouse-scroll {
   position: absolute;
      margin: auto;
-    left: 51.3%;
+     left: 53%;
     -webkit-transform: translateX(-50%);
     z-index: 9999;
-    bottom: 7px;
+    bottom: 10px;
 
 }
 #mouse-scroll span{
@@ -2458,7 +2458,7 @@ left: 100px;
 	-webkit-transform: none;
 	-ms-transform: none;
 	transform: none;
-	border: 2px solid #505050;
+	border: 2px solid #323232;
 	top: 170px;
 }
 
@@ -2467,7 +2467,7 @@ left: 100px;
   width: 2px;
   display: block; 
   margin: 5px auto;
-  background: #505050;
+  background: #323232;
   position: relative;
 }
 #mouse-scroll .mouse-in {

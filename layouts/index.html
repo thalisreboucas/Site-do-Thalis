@@ -13,7 +13,7 @@
   <div class="slider-next-button slider-button">
     <i class="fa fa-angle-right"></i>
   </div>
-         <div id="mouse-scroll">
+    <div id="mouse-scroll">
 			<div class="mouse">
 				<div class="mouse-in"></div>
 			</div>
@@ -26,12 +26,6 @@
   </div>
   <div class="container">
     <div class="row content">
-        <div class="home-content__scroll">
-   <a href="#about" class="scroll-link smoothscroll">
-       <span><small>Role a Página para<br> Ver Mais </small> </span>  </a>
-       <div class="home-content__line"></div>
-       
-                                </div>
       <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
         <div class="head-holder">
           <h1 class="introduction">{{ .Title | markdownify | emojify }}</h1>
@@ -118,27 +112,7 @@
         </li>
         {{ end }}
       </ul>
-      <!-- Language List -->
-      {{- if .IsTranslated }}
-      <select id="select-language" onchange="location = this.value;">
-        {{ $siteLanguages := site.Languages}}
-        {{ $pageLang := .Page.Lang}}
-        {{ range .Page.AllTranslations }}
-        {{ $translation := .}}
-        {{ range $siteLanguages }}
-        {{ if eq $translation.Lang .Lang }}
-        {{ $selected := false }}
-        {{ if eq $pageLang .Lang}}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
-        </option>
-        {{ else }}
-        <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
-        {{ end }}
-        {{ end }}
-        {{ end }}
-        {{ end }}
-      </select>
-      {{ end }}
+      
       <!-- /desktop-menu -->
 
       <!-- mobile-menu -->
