@@ -1199,15 +1199,15 @@ ul.experience-chart h4 {
 ----------------------------------*/
 
 /*--------------------------------
-   Start Portfolio
+   Start blog
 ----------------------------------*/
 
-.portfolio {
+.blog {
   background: #fff;
   padding: 70px 0px;
 }
 
-.portfolio h1 {
+.blog h1 {
   color: #303030;
   text-align: center;
   font-weight: 700;
@@ -1215,7 +1215,7 @@ ul.experience-chart h4 {
   position: relative;
 }
 
-.portfolio h1:before {
+.blog h1:before {
   content: "";
   height: 5px;
   background: #303030;
@@ -1242,7 +1242,7 @@ ul.experience-chart h4 {
   display: none;
 }
 
-.portfolio-navigation {
+.blog-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: inherit;
@@ -1258,23 +1258,23 @@ ul.experience-chart h4 {
   padding-left: 0;
 }
 
-.no-flexbox .portfolio-navigation {
+.no-flexbox .blog-navigation {
   display: inherit;
 }
 
-.portfolio-navigation label {
+.blog-navigation label {
   cursor: pointer;
   padding: 7px 14px;
-  border: 1.5px solid #6f6f6f;
-  color: #6f6f6f;
+  border: 1.5px solid #323232;
+  color: #323232;
   font-weight: 700;
   margin: 0 5px;
   border-radius: 0 !important;
   background-color: transparent;
 }
 
-.portfolio-navigation label:hover {
-  border-color: #6f6f6f;
+.blog-navigation label:hover {
+  border-color: #323232;
   color: #fff;
   background-color: transparent !important;
 }
@@ -1296,18 +1296,18 @@ ul.experience-chart h4 {
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #6f6f6f !important;
+  background-color: #323232 !important;
   border-color: #6f6f6f !important;
 }
-.portfolio .hvr-sweep-to-right.active:before {
-  background: #212121;
+.blog .hvr-sweep-to-right.active:before {
+  background: #fff;
 }
 
-.portfolio .hvr-sweep-to-right:before {
-  background: #6f6f6f;
+.blog .hvr-sweep-to-right:before {
+  background: #323232;
 }
 
-.portfolio .hvr-sweep-to-right.active:before {
+.blog .hvr-sweep-to-right.active:before {
   background: transparent;
 }
 
@@ -1412,7 +1412,7 @@ ul.experience-chart h4 {
 }
 
 /*--------------------------------
- End Portfolio
+ End blog
 ----------------------------------*/
 
 /*--------------------------------
@@ -2176,10 +2176,10 @@ textarea.form-control::-webkit-input-placeholder,
 ----------------------------------*/
 
 /*--------------------------------
-  Start Portfolio
+  Start blog
 ----------------------------------*/
 /*--------------------------------
-  End Portfolio
+  End blog
 ----------------------------------*/
 
 /*--------------------------------

@@ -8,9 +8,6 @@ description: ForecastingCorn.
 draft: false
 image: images/portfolio/forecasting.jpg
 project_info:
-- content: https://thalisreboucas.github.io/Forecastingcorn/
-  icon: fas fa-link
-  name: Visualizar Projeto
 
 title: Previsão do Preço do Milho
 ---
@@ -31,7 +28,10 @@ Foi Feito no R na versão 4.1.0, usando o Rstudio com alguns packages de Forecas
 <a href="https://github.com/thalisreboucas/Forecastingcorn"  >
     <img alt="Github" src="https://img.shields.io/badge/Forecastingcorn-181717?style=for-the-badge&logo=github&logoColor=white" />
     </a>
-    
+
+<a href="https://thalisreboucas.github.io/Forecastingcorn/"  >
+    <img alt="Github" src="https://img.shields.io/badge/Ver mais-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>    
 <br> 
 
 
