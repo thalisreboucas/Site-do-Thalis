@@ -6,7 +6,8 @@
     <div class="row portfolio-holder text-left">
       <div class="col-12 text-center">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s"><small>Últimas do </small> <br> Blog</h1>
-        <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
+        <h4 class="wow fadeInUp" data-wow-duration="1.5s"><Small>Conheça um pouco do que eu sei fazer :) </Small> </h4>
+         <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
           <div class="btn-group btn-group-toggle portfolio-navigation" data-toggle="buttons">
             <label class="btn btn-sm btn-primary active hvr-sweep-to-right">
               <input type="radio" name="shuffle-filter" value="all" checked="checked" />Todos
@@ -29,14 +30,14 @@
         <div class="row filtr-wrapper wow fadeInUp list" data-wow-duration="1.5s">
           {{ range first 6 .Data.Pages }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item"
-            data-groups="[{{range $index, $element:= .Params.categories }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
+            data-groups="[{{range $index, $element:= .Params.tags }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
             <div class="item-holder">
               <a class="image" href="{{.Permalink}}" title="{{ .Title | markdownify }}">
                  <img src="{{ .Params.image | absURL }}" alt="{{ .Title | markdownify }}">
               </a>
               <div class="item-caption">
                 <h4 class="mt-2"><a class="text-white" href="{{.Permalink}}">{{ .Title | markdownify }}</a></h4>
-                {{ range .Params.categories }}
+                {{ range .Params.tags }}
                 <p class="mb-0 text-light">{{ . | title }}</p>
                 {{ end }}
                 <div class="item-created text-light">{{ .PublishDate.Format "02/01/2006" }}</div>
