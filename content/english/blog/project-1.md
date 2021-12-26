@@ -7,7 +7,6 @@ date: "2021-06-06T12:14:34+03:00"
 description: ForecastingCorn.
 draft: false
 image: images/portfolio/forecasting.jpg
-project_info:
 
 title: Previsão do Preço do Milho
 ---
