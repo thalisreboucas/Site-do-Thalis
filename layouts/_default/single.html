@@ -23,7 +23,7 @@
           </div>
           {{ end }}
 
-          <!-- comments -->
+         
           {{ if .Site.DisqusShortname }}
           <div class="mt-5">
             {{ template "_internal/disqus.html" . }}
@@ -74,7 +74,7 @@
 <!-- regular page -->
 {{ else }}
 <style>{{.Params.custom_css | safeCSS}}</style>
-<section class="portfolio {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+<section class="blog {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
   <div class="container wow fadeInUp" data-wow-duration="1.5s">
     <h1 class="text-center mb-5">{{ .Title | markdownify }}</h1>
     <div class="row">
@@ -88,5 +88,8 @@
 </section>
 {{ end }}
 <!-- /regular page -->
+
+ <!-- comments -->
+{{ partial "comments.html" . }}
 
 {{ end }}

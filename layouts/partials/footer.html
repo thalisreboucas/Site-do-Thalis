@@ -5,7 +5,7 @@
         <hr>
         <ul class="footer-icons list-inline">
           {{ range site.Params.social }}
-          <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+          <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
         </ul>
         <div class="credit content">
