@@ -4,5 +4,5 @@ custom_class: ""
 custom_css: ""
 description: Thalis Rebouças - Blog.
 draft: false
-title: Blog
+title: Blog | Thalis
 ---

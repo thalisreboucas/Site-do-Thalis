@@ -7,7 +7,7 @@
 <section class="section {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-4 mb-lg-0">
+      <div class="col-lg-8 mb-2 mb-lg-0">
         <div class="wow fadeInUp" data-wow-duration="1.5s">
           {{ with .Params.image }}<img src="{{. | absURL}}" alt="image" class="img-fluid w-100 mb-5">{{ end }}
           <div class="about-me-text mb-4">
@@ -89,7 +89,10 @@
 {{ end }}
 <!-- /regular page -->
 
+
  <!-- comments -->
 {{ partial "comments.html" . }}
+
+
 
 {{ end }}
