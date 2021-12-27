@@ -1,4 +1,5 @@
 ---
+bg_image: images/backgrounds/slider_01.png
 button:
   enable: true
   label: Baixe meu currículo 
@@ -22,7 +23,7 @@ experience:
     duration:  2019.2 - 2020.2
     name: Assessor de Projetos
   title: EXPERIÊNCIA
-image: images/backgrounds/eu_2.jpg
+image: 
 skill:
   enable: true
   skill_list:
@@ -59,6 +60,5 @@ education:
       
 
 ---
-
 Eu me chamo Thalis, tenho 21 anos, nasci em São Gonçalo no Rio de janeiro, quando eu completei 10 anos vim morar em Fortaleza,Ceará, onde moro atualmente.Conclui o 3º ano em 2017 no Colégio Militar de Fortaleza e atualmente faço Estatítica <3 na Universidade Federal do Ceará. Além disso, a matéria que eu amo probabilidade por conta do Professor Maurício Mota , gosto de fazer análise de dados, projetar machine learning , assistir series ,jogar jogos online e assistir o meu Flamengo amassando os adversários ,enfim ... 😊 <br>
   Bem vindos!!

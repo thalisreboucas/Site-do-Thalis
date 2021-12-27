@@ -853,14 +853,9 @@ input:checked+label span:last-child {
    Start About Me
 ----------------------------------*/
 
-.about-me {
-  background: #fff;
-  padding: 125px 0px 70px 0px;
-}
-
 .about-me-text h1 {
   position: relative;
-  color: #303030;
+  color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -872,12 +867,12 @@ input:checked+label span:last-child {
   top: -8px;
   width: 47px;
   height: 5px;
-  background: #303030;
+  background: #fff;
 }
 
-.about-me-text p {
-  color: #6f6f6f;
-  font-size: 16px;
+
+#text-about{
+  color:#999999 ;
 }
 
 .download-cv {
@@ -895,6 +890,17 @@ input:checked+label span:last-child {
   text-decoration: none;
   color: #4d4d4d;
 }
+
+.about-me {
+  padding: 220px 0px 100px 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  }
+
 
 .about-me-images img {
   width: 100%;
@@ -2020,6 +2026,7 @@ textarea.form-control::-webkit-input-placeholder,
 
 @media (max-width: 991px) {
   .desktop-menu {
+    background:rgba(255, 255, 255,0.20);
     width: 95%;
     margin-left: 10px;
   }
@@ -2027,10 +2034,12 @@ textarea.form-control::-webkit-input-placeholder,
 
 @media (max-width: 800px) {
   .desktop-menu {
+    background:rgba(255, 255, 255,0.20);
     display: none;
   }
 
   .mobile-menu {
+    background:rgba(255, 255, 255,0.90);
     display: block;
   }
 
@@ -2038,7 +2047,7 @@ textarea.form-control::-webkit-input-placeholder,
     justify-content: flex-end;
     padding: 0px 20px;
     height: 0px;
-    background: #fff;
+    background: rgba(255, 255, 255,0.20);
   }
 
   .desktop-menu-logo {
@@ -2046,7 +2055,7 @@ textarea.form-control::-webkit-input-placeholder,
   }
 
   .menu-container-transparent {
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255,0.10);
   }
 }
 
@@ -2090,6 +2099,7 @@ textarea.form-control::-webkit-input-placeholder,
     order: 1;
     margin-bottom: 30px;
   }
+
 
   .about-me-holder {
     display: flex;
