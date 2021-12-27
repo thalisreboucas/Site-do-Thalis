@@ -113,8 +113,8 @@ body {
 
 .scroll-up {
   position: fixed;
-  right: -13px;
-  bottom: 50px;
+  right: -9px;
+  bottom: 30px;
   text-decoration: none;
   color: #242424;
   cursor: pointer;
@@ -2413,7 +2413,7 @@ left: 100px;
 #redes {
   color: #353535;
   font-size: 16px;
-	right: 13px;
+	right: 15px;
 	top: 38.39%;
 	position: fixed;
 	z-index: 2;
