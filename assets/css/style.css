@@ -606,7 +606,7 @@ input:checked+label span:last-child {
   left: 0;
   right: 0;
   height: 55px;
-    background: #161616;
+  background: #1c1b1b;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -619,11 +619,11 @@ input:checked+label span:last-child {
 }
 
 .menu-normal {
-  background: #fff;
+  background: rgba(10,10,10,0.95);
 }
 
 .menu-container-transparent {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .desktop-menu-logo img {
@@ -750,7 +750,7 @@ input:checked+label span:last-child {
   -ms-flex-align: center;
   align-items: center;
   padding-left: 26px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 }
 
 .mobile-menu-icons div {
@@ -824,7 +824,7 @@ input:checked+label span:last-child {
   position: absolute;
   display: none;
   z-index: 999;
-  top: 55px;
+  top: 50px;
   left: 0;
   right: 0;
   background: #212121;
@@ -837,7 +837,7 @@ input:checked+label span:last-child {
 }
 
 .menu-slider li {
-  padding: 9px;
+  padding: 5px;
 }
 
 .menu-slider li a {
