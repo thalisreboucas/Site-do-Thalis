@@ -1,4 +1,6 @@
 ---
+categories:
+- R blog
 tags:
 - R
 - Database

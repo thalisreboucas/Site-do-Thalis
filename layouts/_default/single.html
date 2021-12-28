@@ -11,9 +11,9 @@
         <div class="wow fadeInUp" data-wow-duration="1.5s">
           {{ with .Params.image }}<img src="{{. | absURL}}" alt="image" class="img-fluid w-100 mb-5">{{ end }}
           <div class="about-me-text mb-4">
-            <h1>{{.Title | markdownify}}</h1>
+            <h2>{{.Title | markdownify}}</h2>
           </div>
-          <div class="content">{{.Content}}</div>
+            <div class="content">{{.Content}}</div>
 
           {{ with .Params.tags }}
           <div class="tags mt-4 content">
@@ -31,21 +31,10 @@
           {{ end }}
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="bg-white sticky-top wow fadeInUp" data-wow-duration="1.5s" style="top: 80px;">
-          <div class="widget">
-            <h3 class="widget-title">Tags</h3>
-            {{- if isset site.Taxonomies "tags" }}
-            {{- if not (eq (len site.Taxonomies.tags) 0) }}
-            <ul class="list-unstyled widget-list">
-              {{- range $name, $items := site.Taxonomies.tags }}
-              <li><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}&nbsp;&nbsp;({{ len $items }})</a></li>
-              {{- end }}
-            </ul>
-            {{- end }}
-            {{- end }}
-          </div>
 
+
+
+<!-- Outras Postagens --> 
           <div class="widget">
             <h3 class="widget-title">Outras Postagens</h3>
             {{ $related := (where site.RegularPages "Section" "blog") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
@@ -59,17 +48,38 @@
                 {{ end }}
                 <div class="media-body">
                   <h5 class="h6 mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                  <small>Thalis Rebouças  </small> <br>
                   <small>{{ .PublishDate.Format "02/01/2006" }}</small>
                 </div>
               </li>
             </ul>
             {{ end }}
+            
+<!-- Leia mais -->
+          <div class="widget">
+            <h3 class="widget-title">Leia mais sobre </h3>
+             <div class="col-lg-6">
+           <div class="bg-white  wow fadeInUp" data-wow-duration="1.5s" style="top: 80px;">
+            {{- if isset site.Taxonomies "tags" }}
+            {{- if not (eq (len site.Taxonomies.tags) 0) }}
+            <ul class="list-unstyled widget-list">
+              {{- range $name, $items := site.Taxonomies.tags }}
+              <li><a href="{{ `tags/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}&nbsp;&nbsp;({{ len $items }})</a></li>
+              {{- end }}
+            </ul>
+            {{- end }}
+            {{- end }}
+          </div>          
+  
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
 
 <!-- regular page -->
 {{ else }}

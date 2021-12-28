@@ -3,7 +3,7 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 <style>{{.Params.custom_css | safeCSS}}</style>
-<section class="portfolio {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+<section class="blog {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
   <div class="container">
     <h1 class="wow fadeInUp text-center mb-5" data-wow-duration="1.5s">{{ .Title }}</h1>
     <div class="row wow fadeInUp" data-wow-duration="1.5s">
@@ -15,7 +15,8 @@
               src="{{.Params.image | absURL }}" alt="{{.Title}}" class="card-img-top"></a> {{ end }}
           <div class="card-body">
             <h4 class="mb-2"><a class="card-title" href="{{.Permalink}}">{{.Title}}</a></h4>
-            <p class="card-text">{{.Summary}}</p>
+            <p class="card-text"id = "summa" >{{.Summary}}</p>
+            <center><a href="{{.Permalink}}" class="btn btn-transparent">Leia mais</a></center>
           </div>
         </div>
       </div>

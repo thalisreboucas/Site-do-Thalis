@@ -5,7 +5,7 @@
 <body>
 	{{- partialCached "preloader.html" . -}}
 	{{ if not .IsHome}}
-	{{- partial "header.html" . -}}
+	{{- partial "headerblog.html" . -}}
 	{{ end }}
 	{{- block "main" . }}{{- end }}
 	{{ if not .IsHome}}

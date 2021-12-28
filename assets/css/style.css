@@ -622,6 +622,10 @@ input:checked+label span:last-child {
   background: rgba(10,10,10,0.95);
 }
 
+
+.menu-normalblog {
+  background: #fff;
+}
 .menu-container-transparent {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -2394,6 +2398,7 @@ textarea.form-control::-webkit-input-placeholder,
   margin-right: 10px;
 }
 
+
 #logoimg {
   position: absolute; 
 	left: 450px; /* posiciona a 90px para a esquerda */ 
@@ -2410,6 +2415,7 @@ left: 100px;
 
 /*--- end utteranc css --*/
 
+/* Redes na lateral direita */
 #redes {
   color: #353535;
   font-size: 16px;
@@ -2433,9 +2439,17 @@ left: 100px;
   color: #999;
 }
 
+/* Redes na lateral direita */
+
+/* animação nos icones */
+
 #animated-icon:hover{
   color: #999;
 }
+
+/* animação nos icones */
+
+/* Mouse scroll banner*/
 
 #mouse-scroll {
   style: block;
@@ -2530,3 +2544,168 @@ left: 100px;
   z-index: -1
 }
 
+/* blog slider */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.card-img {
+  opacity: 0.4;
+}
+
+.card-img-overlay::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.5));
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.card-content {
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35%;
+}
+
+.title-border {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+}
+
+.title-border::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0px;
+  background: #ababab;
+}
+
+.title-border-lg {
+  position: relative;
+}
+
+.title-border-lg::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 300px;
+  left: -45px;
+  bottom: -50px;
+  background: #ababab;
+}
+
+@media (max-width: 575px) {
+  .pagination {
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .pagination::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}
+
+.pagination .page-item .page-link {
+  font-family: "hanskendrick";
+  font-size: 30px;
+  border: 0;
+  color: #585757;
+}
+
+@media (max-width: 767px) {
+  .pagination .page-item .page-link {
+    font-size: 16px;
+  }
+}
+
+.pagination .page-item .page-link:hover {
+  color: #000000;
+  background-color: transparent;
+}
+
+.pagination .page-item:first-child .page-link, .pagination .page-item:last-child .page-link {
+  font-size: 16px;
+}
+
+.pagination .page-item.active .page-link {
+  color: #000000;
+  text-decoration: underline;
+  background: transparent;
+}
+
+
+/* Button style */
+.btn {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  padding: 8px 20px;
+  border-radius: 0;
+  font-weight: 600;
+  border: 1px solid;
+  position: relative;
+  z-index: 1;
+  transition: .2s ease;
+}
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background: #ff6f00;
+  color: #fff;
+  border: 0;
+}
+
+.btn-primary:active {
+  background: #ff6f00 !important;
+}
+
+.btn-primary:hover {
+  background: #ff8c33;
+}
+
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+}
+
+.btn-outline-light:active {
+  background: #fff !important;
+  color: #000000;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background: #fff !important;
+  color: #000000;
+  border-color: #fff;
+}
+
+.btn-transparent {
+  color: #505050;
+  border: 0;
+}
+
+#summa{
+  max-width: 150ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
