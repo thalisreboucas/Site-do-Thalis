@@ -2,12 +2,9 @@
 
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
-
-<style>{{.Params.custom_css | safeCSS}}</style>
-
-<br>
-
-<!-- page-title -->
+<!-- /page-title -->
+<section class="section {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
+  <!-- page-title -->
 <section class="bg-posts" style = "background-image: url('{{ .Params.Image | absURL }}')">
   <div class="container">
     <div class="row">
@@ -17,31 +14,36 @@
     </div>
   </div>
 </section>
-<!-- /page-title -->
+  <section>
+   <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        
+        <ul class="list-inline d-flex justify-content-between py-3">
+          <li class="list-inline-item">
+            <i class="fas fa-user-astronaut mr-4"></i>
+            Escrito por Thalis Rebouças
+          <li class="list-inline-item">
+            <i class="fas fa-calendar-alt mr-4"></i>
+            {{ .PublishDate.Format "02/01/2006" }}
+          </li>
+        </ul>
+        <ul class="tags mt-4 content">
+            {{ with .Params.tags }}
+            <i class="fas fa-tags mr-2"></i>
+            {{range $i,$e:= . }}{{if ne $i 0}},{{end}} <a
+              href="{{`tags` | absLangURL}}/{{.|urlize | lower}}">{{.|title}}</a>{{end}}
+          {{ end }}
+        </ul>
+  
+</section>
 
-<section class="section {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mb-2 mb-lg-0 ">
         <div class="wow fadeInUp" data-wow-duration="1.5s">
-         <!-- {{ with .Params.image }}<img src="{{. | absURL}}" alt="image" class="img-fluid w-100 mb-0">{{ end }}-->
           {{ end }}
-        {{ with .Params.tags }}
-          <div class="tags mt-4 content">
-            <i class="fas fa-tags mr-2"></i>
-            {{range $i,$e:= . }}{{if ne $i 0}},{{end}} <a
-              href="{{`tags` | absLangURL}}/{{.|urlize | lower}}">{{.|title}}</a>{{end}}
-          </div> 
-          {{ end }}
-          
-          <br>
-
             <div class="content">{{.Content}}</div>
-          {{ if .Site.DisqusShortname }}
-          <div class="mt-5">
-            {{ template "_internal/disqus.html" . }}
-          </div>
-          {{ end }}
         </div>
       </div>
 
@@ -90,8 +92,6 @@
     </div>
   </div>
 </section>
-
-
 
 
  <!-- comments -->
