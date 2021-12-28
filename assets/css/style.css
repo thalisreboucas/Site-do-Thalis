@@ -2703,9 +2703,22 @@ left: 100px;
   border: 0;
 }
 
+
+.bg-posts {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 #summa{
   max-width: 150ch;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+#branco{
+  color:#fff;
 }
