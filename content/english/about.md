@@ -1,5 +1,5 @@
 ---
-bg_image: images/backgrounds/slider_01.png
+bg_image: images/backgrounds/bgeu.png
 button:
   enable: true
   label: Baixe meu currículo 
