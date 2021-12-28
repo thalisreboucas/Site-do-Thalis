@@ -624,6 +624,8 @@ input:checked+label span:last-child {
 
 
 .menu-normalblog {
+  padding-bottom:35px ;
+  padding-top: 35px;
   background: #fff;
 }
 .menu-container-transparent {
@@ -2722,3 +2724,4 @@ left: 100px;
 #branco{
   color:#fff;
 }
+

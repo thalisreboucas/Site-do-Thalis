@@ -46,18 +46,6 @@ skill:
 title: CONHEÇA MAIS <br> SOBRE MIM
 
 
-education:
-  enable : true
-  title : "Educação"
-  item:
-    - title : "Ensino Médio "
-      year : "2017"
-      academy : "Colégio Militar de Fortaleza"
-      
-    - title : "Bacharel em Estatística (Atualmente)"
-      year : "2019-2023"
-      academy : "Universidade Federal do Ceará"
-      
 
 ---
 Eu me chamo Thalis, tenho 21 anos, nasci em São Gonçalo no Rio de janeiro, quando eu completei 10 anos vim morar em Fortaleza,Ceará, onde moro atualmente.Conclui o 3º ano em 2017 no Colégio Militar de Fortaleza e atualmente faço Estatítica <3 na Universidade Federal do Ceará. Além disso, a matéria que eu amo probabilidade por conta do Professor Maurício Mota , gosto de fazer análise de dados, projetar machine learning , assistir series ,jogar jogos online e assistir o meu Flamengo amassando os adversários ,enfim ... 😊 <br>
