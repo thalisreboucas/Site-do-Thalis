@@ -5,8 +5,12 @@ summaryLength: '10'
 disableLanguages: []
 googleAnalytics: 'G-HQXYFWMZ3J'
 disqusShortname: ''
-outputs:
-  home: HTML
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
 markup:
   goldmark:
     renderer:
@@ -18,6 +22,13 @@ params:
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
   logo_width: 100px
+  MathJaxVersion: 2.7.5
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 9.12.0
   plugins:
     css:
       - link: plugins/bootstrap/bootstrap.min.css
