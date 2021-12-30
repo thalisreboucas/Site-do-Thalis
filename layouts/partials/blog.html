@@ -28,7 +28,7 @@
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
         <div class="row filtr-wrapper wow fadeInUp list" data-wow-duration="1.5s">
-          {{ range first 6 .Data.Pages }}
+          {{ range first 3 .Data.Pages }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item"
             data-groups="[{{range $index, $element:= .Params.tags }}{{if ne $index 0}},{{end}}&quot;{{. | urlize}}&quot;{{ end }}]">
             <div class="item-holder">
@@ -46,7 +46,7 @@
           </div>
           {{ end }}
         </div>
-        {{ if gt (len .Data.Pages) 6}}
+        {{ if gt (len .Data.Pages) 3}}
         <div class="text-center wow fadeInUp mt-4" data-wow-duration="1.5s">
           <a href="{{`blog` | absURL}}" class="btn btn-primary">Carregar Mais</a>
         </div>
