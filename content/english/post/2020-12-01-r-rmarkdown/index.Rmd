@@ -1,0 +1,138 @@
+---
+title: "Distribuições com R"
+author: "Thalis Rebouças"
+date: "2021-10-27T12:14:34+03:00"
+categories: ["R"]
+tags:
+- R
+- ggplot
+- rmarkdown
+image: images/portfolio/dist.png
+---
+
+## Packges 
+
+Será nescessario os Package's `dlpyr`, `ggplot2` e `ploty`.
+
+```{r}
+library(pacman)
+
+pacman::p_load(dplyr,ggplot2,plotly)
+```
+
+## Criando o Grafico 
+
+Para criar o Gráfico é nescessario usar o `ggplot` com o comando `stat_function` com o a função `fun`
+```{r}
+# Criando o Gráfico de uma normal 
+    Normal <- ggplot(  ) + # Para criar uma Figura
+    stat_function( fun = function (x)dnorm(x,0,1), # usando o fun com o function para criar a normal 
+    geom="area" , # Para deixar o gráfico todo preenchido
+    xlim = c(-3,3), # Para definir meu eixo X 
+    alpha = .5, fill = "blue" , col = "blue") + # Colocando transparencia e cores 
+    ylab("f(x)") + xlab("X") + ggtitle("Distribuição Normal") + # colocando Títulos 
+    theme_minimal() # deixando o grafico mais bonito =)  
+  
+Normal
+
+```
+
+## Adicionando Outra Distribição 
+
+```{r}
+
+Normais <- Normal + stat_function( fun = function (x)dnorm(x,-3,1.2), # usando outro fun com o function para criar a normal 
+    geom="area" , # Para deixar o gráfico todo preenchido
+    xlim = c(-3,3), # Para definir meu eixo X 
+    alpha = .5, fill = "red" , col = "red") + # Colocando transparencia e cores 
+    ylab("f(x)") + xlab("X") + ggtitle("Distribuições Normais") + # colocando Títulos 
+    theme_minimal()
+
+Normais
+```
+
+
+## Deixando mais bonito e colocando texto
+
+Usando o comando `ggplotly()` para deixar o gráfico mais bonito
+```{r}
+ggplotly(Normais)
+
+```
+
+### Adicinado Marcado e Texto 
+
+```{r}
+
+ggplotly(Normais) %>% 
+      add_markers(x = 1.5,y = 0.37, # Adicionando um Marcador 
+                  marker = list(color = 'rgba(0, 0, 255,0.5)', size = 10))  %>% # Colocando cor e tamanho 
+      add_annotations(x=1.6,  y=0.37,  xref = "x",  yref = "y", #Colocando um texto 
+                      text = "Média = 0 e Desvio-Padrão = 1", # Adicionado o Texto
+                      xanchor = 'left',showarrow = F , font = list(color = 'rgba(0, 0, 255,0.5)', #Posicionando e colocando cor
+                      family = 'calibri light', size = 14)  ) %>%  # Colocando fonte e tamanho
+  add_markers(x = 1.5,y = 0.35, marker = list(color = 'rgba(255, 0, 0,0.5)', size = 10)) %>% 
+      add_annotations(  x=1.6,  y=0.35,  xref = "x",  yref = "y",text = "Média = 0 e Desvio-Padrão = 1", 
+                        xanchor = 'left',  showarrow = F ,font = list(color = 'rgba(255, 0, 0,0.5)',
+                                                                      family = 'calibri light', size = 14)  )
+```
+
+
+
+## Distribuições Normais
+
+```{r}
+normal <- ggplot( ) + 
+             stat_function( fun = dnorm ,
+                geom="area" , xlim = c(-5,7), 
+                  alpha = .5, fill = "blue" , col = "blue") +      
+              stat_function(
+                fun = function(x) dnorm(x,2,2) ,
+                 geom="area" , xlim = c(-5,7), 
+                    alpha = .5, fill = "orange",col = "orange" ) + ylab("f(x)") + xlab("X") +
+                       ggtitle( label ="Gráfico das Distribuições Normais  " ) + 
+               stat_function(
+                fun = function(x) dnorm(x,-3,1.5) ,
+                 geom="area" , xlim = c(-5,8), 
+                    alpha = .5, fill = "red" ,col = "red") + 
+               stat_function(
+                fun = function(x) dnorm(x,4,3) ,
+                 geom="area" , xlim = c(-5,8), 
+                    alpha = .5, fill = "green" ,col = "green") +
+                     theme_minimal()
+```
+
+
+```{r}
+
+ggplotly(normal ) %>%
+      add_markers(x = 4.5,y = 0.37, showlegend = F , marker = list(color = 'rgba(0, 0, 255,0.5)', size = 10)) %>% 
+      add_annotations(  x=4.7,  y=0.37,  xref = "x",  yref = "y",text = "Média = 0 e Desvio-Padrão = 1", 
+                        xanchor = 'left',  showarrow = F ,font = list(color = 'rgba(0, 0, 255,0.5)',
+                                                                      family = 'calibri light', size = 14)  )  %>% 
+  
+      add_markers(x = 4.5,y = 0.35, showlegend = F , marker = list(color = 'rgba(255, 0, 0,0.7)', size = 10)) %>% 
+      add_annotations(  x=4.7,  y=0.35,  xref = "x",  yref = "y",text = "Média =-3 e Desvio-Padrão = 1,5",                                                   xanchor = 'left',  showarrow = F , font = list(color = 'rgba(255, 0, 0,0.5)',
+                                                                       family = 'calibri light', size = 14)  ) %>% 
+
+      add_markers(x = 4.5,y = 0.33, showlegend = F , marker = list(color = 'rgb(255, 125, 35,0.5)', size = 10)) %>% 
+      add_annotations(  x=4.7,  y=0.33,  xref = "x",  yref = "y", text = "Média = 2 e Desvio-Padrão = 2",  
+                        xanchor = 'left',  showarrow = F ,   font = list(color = 'rgb(255, 125, 35,0.5)',
+                                                                        family = 'calibri light', size = 14)) %>% 
+
+      add_markers(x = 4.5,y = 0.31, showlegend = F , marker = list(color = 'rgb(0, 255, 0,0.5)', size = 10)) %>% 
+      add_annotations(  x=4.7,  y=0.31,  xref = "x",  yref = "y", text = "Média = 4 e Desvio-Padrão = 3",  
+                        xanchor = 'left',  showarrow = F ,   font = list(color = 'rgb(0, 255, 0,0.5)',
+                                                                        family = 'calibri light', size = 14)) 
+
+```
+
+#### Repositório no Github
+
+<a href="https://github.com/thalisreboucas/distrib-with-r"  >
+    <img alt="Github" src="https://img.shields.io/badge/distribR-181717?style=for-the-badge&logo=github&logoColor=white" />
+    </a>
+    
+
+
+

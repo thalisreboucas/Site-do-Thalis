@@ -1,7 +1,7 @@
 <!-- Start blog -->
-{{ with .GetPage "blog"}}
+{{ with .GetPage "post"}}
 <style>{{.Params.custom_css | safeCSS}}</style>
-<section class="blog {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="blog">
+<section class="post {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="blog">
   <div class="container-fluid text-center">
     <div class="row blog-holder text-left">
       <div class="col-12 text-center">
@@ -48,7 +48,7 @@
         </div>
         {{ if gt (len .Data.Pages) 3}}
         <div class="text-center wow fadeInUp mt-4" data-wow-duration="1.5s">
-          <a href="{{`blog` | absURL}}" class="btn btn-primary">Carregar Mais</a>
+          <a href="{{`post` | absURL}}" class="btn btn-primary">Carregar Mais</a>
         </div>
         {{ end }}
       </div>
