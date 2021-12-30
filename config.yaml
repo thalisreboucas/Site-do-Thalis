@@ -76,7 +76,7 @@ Languages:
           url: service
           weight: 3
         - name: Blog
-          url: blog
+          url: post
           weight: 4
         - name: Contato
           pre: '#'
