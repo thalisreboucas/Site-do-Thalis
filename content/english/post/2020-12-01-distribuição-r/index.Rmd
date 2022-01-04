@@ -8,18 +8,18 @@ tags:
 - ggplot
 - rmarkdown
 image: images/portfolio/dist.png
+draft: false
 ---
 
 ## Packges 
 
-Será nescessario os Package's `dlpyr`, `ggplot2` e `ploty`.
+Para fazer os gráficos no R será nescessario os Package's `dlpyr`, `ggplot2` e `ploty`.O  dplyr  serve para manipulação de dados e o ggplot e o plotly servem para fazer graficos.
 
-```{r}
+```{r include=FALSE}
 library(pacman)
 
 pacman::p_load(dplyr,ggplot2,plotly)
 ```
-
 ## Criando o Grafico 
 
 Para criar o Gráfico é nescessario usar o `ggplot` com o comando `stat_function` com o a função `fun`

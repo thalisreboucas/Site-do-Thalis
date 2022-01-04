@@ -145,6 +145,9 @@ body {
   border: 2px solid #242424;
 }
 
+
+
+
 /*--------------------------------
    End Preloader & General Styling
 ----------------------------------*/
@@ -894,7 +897,23 @@ input:checked+label span:last-child {
 .download-cv:hover,
 .download-cv:focus {
   text-decoration: none;
+  color: #fff;
+}
+
+.linkedin-cv {
+  text-decoration: none;
   color: #4d4d4d;
+  font-weight: 700;
+  margin-top: 15px;
+  display: inline-block;
+  border: 2px solid #4d4d4d;
+  padding: 7px 10px;
+}
+
+.linkedin-cv:hover,
+.linkedin-cv:focus {
+  text-decoration: none;
+  color: #fff;
 }
 
 .about-me {
@@ -2724,13 +2743,13 @@ left: 100px;
 }
 
 /* R estilo */
-code span.kw { color: #a71d5d; font-weight: normal; } /* Keyword */
-code span.dt { color: #795da3; } /* DataType */
-code span.dv { color: #0086b3; } /* DecVal */
-code span.bn { color: #0086b3; } /* BaseN */
-code span.fl { color: #0086b3; } /* Float */
-code span.ch { color: #4070a0; } /* Char */
-code span.st { color: #183691; } /* String */
-code span.co { color: #969896; font-style: italic; } /* Comment */
-code span.ot { color: #007020; } /* Other */
+.code span.kw { color: #a71d5d; font-weight: normal; } /* Keyword */
+.code span.dt { color: #795da3; } /* DataType */
+.code span.dv { color: #0086b3; } /* DecVal */
+.code span.bn { color: #0086b3; } /* BaseN */
+.code span.fl { color: #0086b3; } /* Float */
+.code span.ch { color: #4070a0; } /* Char */
+.code span.st { color: #183691; } /* String */
+.code span.co { color: #969896; font-style: italic; } /* Comment */
+.code span.ot { color: #007020; } /* Other */
 

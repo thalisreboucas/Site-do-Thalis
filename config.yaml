@@ -5,12 +5,6 @@ summaryLength: '10'
 disableLanguages: []
 googleAnalytics: 'G-HQXYFWMZ3J'
 disqusShortname: ''
-ignoreFiles:
-  - \.Rmd$
-  - \.Rmarkdown$
-  - _cache$
-  - \.knit\.md$
-  - \.utf8\.md$
 markup:
   goldmark:
     renderer:
@@ -22,13 +16,6 @@ params:
   logo_dark: images/logo-dark.png
   logo_light: images/logo.png
   logo_width: 100px
-  MathJaxVersion: 2.7.5
-  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang:
-    - r
-    - yaml
-  highlightjsTheme: github
-  highlightjsVersion: 10.5.0 
   plugins:
     css:
       - link: plugins/bootstrap/bootstrap.min.css
@@ -41,7 +28,7 @@ params:
       - link: plugins/text-animation/text-animation.css
       - link: plugins/slick/slick.css
       - link: plugins/themify-icons/themify-icons.css
-
+      - link: plugins/github.css
     js:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js
@@ -52,6 +39,13 @@ params:
       - link: plugins/magnific-popup/jquery.magnific-popup.min.js
       - link: plugins/owl-carousel/owl.carousel.min.js
       - link: plugins/highlight.pack.js
+  MathJaxVersion: 2.7.5
+  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
+  highlightjsLang:
+    - r
+    - yaml
+  highlightjsTheme: github
+  highlightjsVersion: 10.5.0 
   preloader:
     enable: yes
     preloader: images/loading.gif
