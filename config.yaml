@@ -28,7 +28,7 @@ params:
     - r
     - yaml
   highlightjsTheme: github
-  highlightjsVersion: 9.12.0
+  highlightjsVersion: 10.5.0 
   plugins:
     css:
       - link: plugins/bootstrap/bootstrap.min.css
@@ -41,6 +41,7 @@ params:
       - link: plugins/text-animation/text-animation.css
       - link: plugins/slick/slick.css
       - link: plugins/themify-icons/themify-icons.css
+
     js:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js
@@ -50,6 +51,7 @@ params:
       - link: plugins/shuffle/shuffle.min.js
       - link: plugins/magnific-popup/jquery.magnific-popup.min.js
       - link: plugins/owl-carousel/owl.carousel.min.js
+      - link: plugins/highlight.pack.js
   preloader:
     enable: yes
     preloader: images/loading.gif
