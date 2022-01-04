@@ -1291,6 +1291,27 @@ ul.experience-chart h4 {
   background-color: transparent !important;
 }
 
+.hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #323232;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
@@ -2653,11 +2674,11 @@ left: 100px;
 }
 
 .btn-primary:active {
-  background: #ff6f00 !important;
+  background: #6f6f6f !important;
 }
 
 .btn-primary:hover {
-  background: #626262;
+  background: #6f6f6f;
 }
 
 .btn-outline-light {
