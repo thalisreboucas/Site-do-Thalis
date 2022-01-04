@@ -7,10 +7,10 @@ button:
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
-first_name: Thalis  
-last_name: REBOUÇAS 
+first_name: Thalis
+last_name: REBOUÇAS
 occupations:
-- Estatístico 
+- Estatístico
 - Cientista de Dados
 - Analista de Dados
 - Data Hacker

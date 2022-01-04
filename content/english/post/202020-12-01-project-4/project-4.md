@@ -1,7 +1,4 @@
 ---
-tags:
-- R
-- Rmarkdown
 date: "2021-10-19T12:14:34+03:00"
 description: Rmarkdown Template
 draft: false
@@ -10,8 +7,10 @@ project_info:
 - content: https://thalisreboucas.github.io/Template-rmarkdown/
   icon: fas fa-link
   name: Visualizar Projeto
-
-title: Report Theme R 
+tags:
+- R
+- Rmarkdown
+title: Report Theme R
 ---
 
 

@@ -5,6 +5,12 @@ summaryLength: '10'
 disableLanguages: []
 googleAnalytics: 'G-HQXYFWMZ3J'
 disqusShortname: ''
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - _cache$
+  - \.knit\.md$
+  - \.utf8\.md$
 markup:
   goldmark:
     renderer:
@@ -29,6 +35,7 @@ params:
       - link: plugins/slick/slick.css
       - link: plugins/themify-icons/themify-icons.css
       - link: plugins/github.css
+
     js:
       - link: plugins/jQuery/jquery.min.js
       - link: plugins/bootstrap/bootstrap.min.js

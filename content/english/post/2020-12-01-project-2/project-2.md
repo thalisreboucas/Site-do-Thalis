@@ -1,7 +1,4 @@
 ---
-tags:
-- Python
-- development
 date: "2021-01-10T12:14:34+06:00"
 description: C0des in Python.
 draft: false
@@ -10,7 +7,9 @@ project_info:
 - content: https://github.com/thalisreboucas/Python-codes-ML
   icon: fas fa-link
   name: Visualizar Projeto
-    
+tags:
+- Python
+- development
 title: C0des Python
 ---
 

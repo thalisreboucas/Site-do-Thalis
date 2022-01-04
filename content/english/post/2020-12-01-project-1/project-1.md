@@ -1,14 +1,14 @@
 ---
 categories:
 - R blog
-tags:
-- R
-- Database
-- Bookdown
 date: "2021-06-06T12:14:34+03:00"
 description: ForecastingCorn.
 draft: false
 image: images/portfolio/forecasting.jpg
+tags:
+- R
+- Database
+- Bookdown
 title: Previsão do Preço do Milho
 ---
 
