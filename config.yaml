@@ -46,13 +46,13 @@ params:
       - link: plugins/magnific-popup/jquery.magnific-popup.min.js
       - link: plugins/owl-carousel/owl.carousel.min.js
       - link: plugins/highlight.pack.js
-  MathJaxVersion: 2.7.5
-  highlightjsCDN: //cdnjs.cloudflare.com/ajax/libs
-  highlightjsLang:
-    - r
-    - yaml
-  highlightjsTheme: github
-  highlightjsVersion: 10.5.0 
+    MathJaxVersion: 2.7.5
+    highlightjsCDN: "//cdnjs.cloudflare.com/ajax/libs"
+    highlightjsLang:
+      - "r"
+      - "yaml"
+    highlightjsTheme: "github"
+    highlightjsVersion: 10.5.0 
   preloader:
     enable: yes
     preloader: images/loading.gif
