@@ -1,0 +1,112 @@
+---
+title: "Mapa com R"
+author: "Thalis RebouçasT12:14:34+03:00"
+date: "2022-10-04"
+categories: ["R"]
+tags:
+- R
+- mapa
+image: images/portfolio/mapa.jpg
+draft: false
+---
+
+## Neste post vamos aprender a fazer um mapa no R. 
+
+Para fazer um mapa no R precisaremos das seguintes library's `leaflet` e a `geosphere`
+
+```{r}
+# Library para abrir e instalar as outras library's
+
+library(pacman)
+
+pacman::p_load(leaflet,dplyr,geosphere)
+```
+
+#### Vamos agora para o passo a passo de como fazer um mapa
+
+Vou criar um banco de dados para facilitar a criação de varios pontos no grafico , mas o principal é ter a longitude e latitude que é facil de conseguir no google maps , é só clicar no ponto com o botão direito , neste os primeiros que aparencerem é a latitude e o outro a logintude.
+
+```{r}
+# leaflet serve para fazer o mapa
+
+# Dplyr serve para manipulação de dados
+
+# Crinando um df 
+df_mapa <- data.frame( 
+  nome = c( 
+    "José Walter" ,"Fátima", 
+    "Cidade dos Func",  "Serrinha",
+    "Pici" ,  "Conj. Esperança",
+    "Aldeota ",  "Montese",
+    "Ancuri ",  "jardim Iracema",
+    "Parquelândia" ," Messejana" ) ,
+     lng = c( 
+      -38.553389554435576,
+      -38.52714847150665,
+      -38.50005879279594,
+     -38.547663959668284,  
+     -38.57761433291892,
+     -38.590711347645176,
+     -38.498625101022164,
+     -38.5514658306255,
+     -38.50338684020313,
+     -38.58397722380155,
+     -38.56268451645613,
+     -38.49388891005391),
+     lat = c(   
+    -3.83259294164017,
+    -3.751260636027342,
+    -3.7966251986881887,
+    -3.783267356958625,
+    -3.7523395304487317 ,
+    -3.817126228572243,
+    -3.740024122847298 ,
+    -3.768427513013759 ,
+    -3.8608142215187398,
+    -3.7207669157888885 , 
+    -3.737039685936608, 
+    -3.832295169878992 )
+       )
+```
+
+
+Criado o banco de dados agora vamos usar o `leaflet` junto com o `dplyr` para gerar o mapa , nos temos a função `data` para caso você tenha um banco de dados ,mas é nescessaria. Além disso , temos que colocar o `addMakers()` que são os marcadores de pontos, o  `lng = .` que é a logindute e  `lat= .` que é a latidute.     
+
+```{r}
+mapa <- leaflet() %>% 
+  addTiles() %>%
+  addMarkers(
+    data = df_mapa , 
+    # utlizaremos o ~ para selecionar a coluna do Dataframe
+    lng = ~lng , lat = ~lat , 
+    # função paste para colar os nomes no label
+    label = paste( df_mapa$nome) )
+
+
+# Visualizando o mapa 
+mapa
+  
+```
+
+#### customização do mapa
+
+É possivel custimizar o mapa ,colocando cores , relevos também e minimapa.
+
+```{r}
+mapa %>% 
+  addProviderTiles("CartoDB.DarkMatter") %>% 
+  addAwesomeMarkers(
+    lng = -38.540885,
+    lat = -3.782715,
+    label = "Ponto Médio"
+  ) %>% 
+  addMeasure(
+    position = "bottomleft",
+    primaryLengthUnit = "meters",
+    primaryAreaUnit = "sqmeters",
+    activeColor = "#0bd3d3",
+    completedColor = "#f890e7"
+  ) %>% 
+  addMiniMap(tiles = "CartoDB.DarkMatter")
+
+```

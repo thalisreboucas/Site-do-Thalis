@@ -1,0 +1,122 @@
+---
+title: "Mapa com R"
+author: "Thalis RebouçasT12:14:34+03:00"
+date: "2022-10-04"
+categories: ["R"]
+tags:
+- R
+- mapa
+image: images/portfolio/mapa.jpg
+draft: false
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index_files/jquery/jquery.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/leaflet/leaflet.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/leaflet/leaflet.js"></script>
+<link href="{{< blogdown/postref >}}index_files/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/proj4/proj4.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="{{< blogdown/postref >}}index_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/leaflet-binding/leaflet.js"></script>
+<script src="{{< blogdown/postref >}}index_files/leaflet-providers/leaflet-providers_1.9.0.js"></script>
+<script src="{{< blogdown/postref >}}index_files/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="{{< blogdown/postref >}}index_files/leaflet-awesomemarkers/leaflet.awesome-markers.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/leaflet-awesomemarkers/leaflet.awesome-markers.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/leaflet-measure/leaflet-measure.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/leaflet-measure/leaflet-measure.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/leaflet-minimap/Control.MiniMap.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/leaflet-minimap/Control.MiniMap.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/leaflet-minimap/Minimap-binding.js"></script>
+
+
+<div id="neste-post-vamos-aprender-a-fazer-um-mapa-no-r." class="section level2">
+<h2>Neste post vamos aprender a fazer um mapa no R.</h2>
+<p>Para fazer um mapa no R precisaremos das seguintes library’s <code>leaflet</code> e a <code>geosphere</code></p>
+<pre class="r"><code># Library para abrir e instalar as outras library&#39;s
+
+library(pacman)
+
+pacman::p_load(leaflet,dplyr,geosphere)</code></pre>
+<div id="vamos-agora-para-o-passo-a-passo-de-como-fazer-um-mapa" class="section level4">
+<h4>Vamos agora para o passo a passo de como fazer um mapa</h4>
+<p>Vou criar um banco de dados para facilitar a criação de varios pontos no grafico , mas o principal é ter a longitude e latitude que é facil de conseguir no google maps , é só clicar no ponto com o botão direito , neste os primeiros que aparencerem é a latitude e o outro a logintude.</p>
+<pre class="r"><code># leaflet serve para fazer o mapa
+
+# Dplyr serve para manipulação de dados
+
+# Crinando um df 
+df_mapa &lt;- data.frame( 
+  nome = c( 
+    &quot;José Walter&quot; ,&quot;Fátima&quot;, 
+    &quot;Cidade dos Func&quot;,  &quot;Serrinha&quot;,
+    &quot;Pici&quot; ,  &quot;Conj. Esperança&quot;,
+    &quot;Aldeota &quot;,  &quot;Montese&quot;,
+    &quot;Ancuri &quot;,  &quot;jardim Iracema&quot;,
+    &quot;Parquelândia&quot; ,&quot; Messejana&quot; ) ,
+     lng = c( 
+      -38.553389554435576,
+      -38.52714847150665,
+      -38.50005879279594,
+     -38.547663959668284,  
+     -38.57761433291892,
+     -38.590711347645176,
+     -38.498625101022164,
+     -38.5514658306255,
+     -38.50338684020313,
+     -38.58397722380155,
+     -38.56268451645613,
+     -38.49388891005391),
+     lat = c(   
+    -3.83259294164017,
+    -3.751260636027342,
+    -3.7966251986881887,
+    -3.783267356958625,
+    -3.7523395304487317 ,
+    -3.817126228572243,
+    -3.740024122847298 ,
+    -3.768427513013759 ,
+    -3.8608142215187398,
+    -3.7207669157888885 , 
+    -3.737039685936608, 
+    -3.832295169878992 )
+       )</code></pre>
+<p>Criado o banco de dados agora vamos usar o <code>leaflet</code> junto com o <code>dplyr</code> para gerar o mapa , nos temos a função <code>data</code> para caso você tenha um banco de dados ,mas é nescessaria. Além disso , temos que colocar o <code>addMakers()</code> que são os marcadores de pontos, o <code>lng = .</code> que é a logindute e <code>lat= .</code> que é a latidute.</p>
+<pre class="r"><code>mapa &lt;- leaflet() %&gt;% 
+  addTiles() %&gt;%
+  addMarkers(
+    data = df_mapa , 
+    # utlizaremos o ~ para selecionar a coluna do Dataframe
+    lng = ~lng , lat = ~lat , 
+    # função paste para colar os nomes no label
+    label = paste( df_mapa$nome) )
+
+
+# Visualizando o mapa 
+mapa</code></pre>
+<div id="htmlwidget-1" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-3.83259294164017,-3.75126063602734,-3.79662519868819,-3.78326735695862,-3.75233953044873,-3.81712622857224,-3.7400241228473,-3.76842751301376,-3.86081422151874,-3.72076691578889,-3.73703968593661,-3.83229516987899],[-38.5533895544356,-38.5271484715066,-38.5000587927959,-38.5476639596683,-38.5776143329189,-38.5907113476452,-38.4986251010222,-38.5514658306255,-38.5033868402031,-38.5839772238015,-38.5626845164561,-38.4938889100539],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["José Walter","Fátima","Cidade dos Func","Serrinha","Pici","Conj. Esperança","Aldeota ","Montese","Ancuri ","jardim Iracema","Parquelândia"," Messejana"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-3.86081422151874,-3.72076691578889],"lng":[-38.5907113476452,-38.4938889100539]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="customização-do-mapa" class="section level4">
+<h4>customização do mapa</h4>
+<p>É possivel custimizar o mapa ,colocando cores , relevos também e minimapa.</p>
+<pre class="r"><code>mapa %&gt;% 
+  addProviderTiles(&quot;CartoDB.DarkMatter&quot;) %&gt;% 
+  addAwesomeMarkers(
+    lng = -38.540885,
+    lat = -3.782715,
+    label = &quot;Ponto Médio&quot;
+  ) %&gt;% 
+  addMeasure(
+    position = &quot;bottomleft&quot;,
+    primaryLengthUnit = &quot;meters&quot;,
+    primaryAreaUnit = &quot;sqmeters&quot;,
+    activeColor = &quot;#0bd3d3&quot;,
+    completedColor = &quot;#f890e7&quot;
+  ) %&gt;% 
+  addMiniMap(tiles = &quot;CartoDB.DarkMatter&quot;)</code></pre>
+<div id="htmlwidget-2" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[[-3.83259294164017,-3.75126063602734,-3.79662519868819,-3.78326735695862,-3.75233953044873,-3.81712622857224,-3.7400241228473,-3.76842751301376,-3.86081422151874,-3.72076691578889,-3.73703968593661,-3.83229516987899],[-38.5533895544356,-38.5271484715066,-38.5000587927959,-38.5476639596683,-38.5776143329189,-38.5907113476452,-38.4986251010222,-38.5514658306255,-38.5033868402031,-38.5839772238015,-38.5626845164561,-38.4938889100539],null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,["José Walter","Fátima","Cidade dos Func","Serrinha","Pici","Conj. Esperança","Aldeota ","Montese","Ancuri ","jardim Iracema","Parquelândia"," Messejana"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addProviderTiles","args":["CartoDB.DarkMatter",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addAwesomeMarkers","args":[-3.782715,-38.540885,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Ponto Médio",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMeasure","args":[{"position":"bottomleft","primaryLengthUnit":"meters","primaryAreaUnit":"sqmeters","activeColor":"#0bd3d3","completedColor":"#f890e7","popupOptions":{"className":"leaflet-measure-resultpopup","autoPanPadding":[10,10]},"captureZIndex":10000,"localization":"en","decPoint":".","thousandsSep":","}]},{"method":"addMiniMap","args":[null,"CartoDB.DarkMatter","bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]}],"limits":{"lat":[-3.86081422151874,-3.72076691578889],"lng":[-38.5907113476452,-38.4938889100539]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
