@@ -67,8 +67,8 @@ body {
 }
 
 .section {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .section-sm {
@@ -2374,11 +2374,11 @@ textarea.form-control::-webkit-input-placeholder,
   line-height: 1.3;
   height: 40px;
   border-radius: 0;
-  border: 1px solid #999;
+  border: 0px solid #fff;
   text-align: center;
   margin-right: 6px;
   font-weight: 600;
-  color: #4d4d4d;
+  color: #fff;
 }
 
 .pagination .page-item .page-link:hover {
@@ -2629,16 +2629,21 @@ left: 100px;
     white-space: nowrap;
   }
   .pagination::-webkit-scrollbar {
-    width: 0px;
     background: transparent;
   }
 }
 
 .pagination .page-item .page-link {
-  font-family: "hanskendrick";
-  font-size: 30px;
-  border: 0;
-  color: #585757;
+  display: inline-block;
+  width: 40px;
+  line-height: 1.3;
+  height: 40px;
+  border-radius: 0;
+  border: 0px solid #999;
+  text-align: center;
+  margin-right: 6px;
+  font-weight: 600;
+  color: #4d4d4d;
 }
 
 @media (max-width: 767px) {

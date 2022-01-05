@@ -41,7 +41,7 @@
   </div>
 
 <!-- Outras Postagens --> 
-          <div class="widget">
+          <div class="widget ">
             <h3 class="widget-title">Outras Postagens</h3>
             {{ $related := (where site.RegularPages "Section" "post") | intersect (where site.Pages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
             {{ range first 5 $related }}
