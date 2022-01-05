@@ -213,72 +213,7 @@ body {
 .owl-full-width div {
   height: 100%;
 }
-/*
-.header .slider::after,
-.header::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  background: rgba(30, 30, 30, .01);
-  z-index: 9;
-}
 
-
-.slider-button {
-  position: absolute;
-  top: 49%;
-  height: 26px;
-  width: 26px;
-  z-index: 10;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 25px;
-  border: 1px solid #303030;
-  color: #303030;
-  opacity: 0;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-
-.slider-prev-button {
-  left: 40px;
-  transform: translateX(15px);
-}
-
-.slider-next-button {
-  right: 40px;
-  transform: translateX(-15px);
-}
-
-.slider-button:hover {
-  background: #999;
-  color: #fff;
-}
-
-.header:hover .slider-button {
-  opacity: 1;
-  transform: translateX(0px);
-}
-
-.slider-prev-button .fa {
-  position: relative;
-  top: -6px;
-  left: -2px;
-}
-
-.slider-next-button .fa {
-  position: relative;
-  top: -6px;
-  left: 2px;
-}
-*/
 .head-container {
   display: table;
   position: absolute;
@@ -926,30 +861,6 @@ input:checked+label span:last-child {
   
   }
 
-
-.about-me-images img {
-  width: 100%;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: all linear .3s;
-  -moz-transition: all linear .3s;
-  -ms-transition: all linear .3s;
-  -o-transition: all linear .3s;
-  transition: all linear .3s;
-}
-
-.about-me-images img:hover {
-  width: 100%;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
 .about-me .hvr-icon-hang:before {
   content: "\f0ab";
   position: absolute;
@@ -1467,99 +1378,6 @@ ul.experience-chart h4 {
  End blog
 ----------------------------------*/
 
-/*--------------------------------
-   Start Testimonials
-----------------------------------*/
-
-/* ========= Start Main Testimonials ======= */
-
-.testimonials {
-  background: #fff;
-  padding: 70px 0px;
-}
-
-.owl-carousel {
-  margin-top: 50px;
-}
-
-.testimonials-container h1 {
-  position: relative;
-  text-align: center;
-  color: #6f6f6f;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.testimonials-container h1:before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 80px;
-  height: 5px;
-  background: #6f6f6f;
-}
-
-.single-testimonial img {
-  width: 160px;
-  margin: auto;
-  border-radius: 100%;
-}
-
-.no-js .single-testimonial img {
-  width: 165px;
-  display: inherit;
-}
-
-.single-testimonial h2 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 26px;
-  margin-top: 25px;
-  margin-bottom: 2px;
-}
-
-.single-testimonial span {
-  display: block;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 700;
-  color: #6f6f6f;
-  margin-bottom: 15px;
-}
-
-.single-testimonial p {
-  color: #6f6f6f;
-  font-weight: 500;
-  font-size: 17px;
-  width: 60%;
-  text-align: center;
-  margin: auto;
-}
-
-.no-js .single-testimonial p {
-  margin-bottom: 40px;
-}
-
-.single-testimonial .fa {
-  font-size: 25px;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-  background: #fff;
-  border: 2px solid #6f6f6f;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #6f6f6f;
-}
-
-.owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 20px;
-}
 
 /* ========= 7.2 Start Fun Facts ======= */
 
@@ -1602,10 +1420,6 @@ ul.experience-chart h4 {
   font-size: 21px;
   margin-top: 13px;
 }
-
-/*--------------------------------
-   End Testimonials
-----------------------------------*/
 
 /*--------------------------------
    Start Contact
@@ -2231,48 +2045,6 @@ textarea.form-control::-webkit-input-placeholder,
  End Services
 ----------------------------------*/
 
-/*--------------------------------
-  Start blog
-----------------------------------*/
-/*--------------------------------
-  End blog
-----------------------------------*/
-
-/*--------------------------------
-   Start Testimonials
-----------------------------------*/
-
-@media(max-width: 380px) {
-  .single-testimonial p {
-    width: 80%;
-  }
-}
-
-@media (max-width: 991px) {
-  .fun-facts {
-    justify-content: space-around;
-  }
-
-  .fun-fact-holder {
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width:766px) and (max-width: 991px) {
-  .testimonials {
-    padding: 70px 0px 35px 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .testimonials {
-    padding: 70px 0px 0px 0px;
-  }
-}
-
-/*--------------------------------
-  End Testimonials
-----------------------------------*/
 
 /*--------------------------------
   Start Contact

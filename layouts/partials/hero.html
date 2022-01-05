@@ -5,15 +5,7 @@
   <div class="logo">
     <img class="img-fluid" src="{{ site.Params.logo_light | relURL }}" alt="{{ site.Title }}">
   </div>
-  <!-- 
-  <div class="slider-prev-button slider-button">
-    <i class="fa fa-angle-left"></i>
-  </div>
-  <div class="slider-next-button slider-button">
-    <i class="fa fa-angle-right"></i>
-  </div>
-  -->
-    <div id="mouse-scroll">
+     <div id="mouse-scroll">
 			<div class="mouse">
 				<div class="mouse-in"></div>
 			</div>
@@ -24,6 +16,7 @@
     <div class="slider"><img class="img-fluid" src="{{ . | absURL }}" alt="slider-background"></div>
     {{ end }}
   </div>
+  
   <div class="container">
     <div class="row content">
       <div class="col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 head-container">
@@ -43,48 +36,17 @@
           <a class="hireMe" href="{{ .link | relURL}}">{{ .label }}</a>
           {{ end }}
           {{ end }}
-        </div>
-               <!-- social icon -->
+          
+                         <!-- social icon -->
     <div id="redes" class="rightShow wow fadeInUp" data-wow-duration="1.5s" >
     <ul class="list-unstyled ml-10 mt-10">
           {{ range site.Params.social }}
           <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
           {{ end }}
     </ul></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="fullscreen-nav-container" style="background-image: url('{{ .Params.bg_image | absURL }}');">
-    <div class="container-fluid">
-      <div class="full-nav-container row">
-        <div class="full-nav-holder">
-          <div class="full-nav-content">
-            <div class="name">
-              {{ with .Params.first_name }}<div class="first-name">{{ . }}</div>{{ end }}
-              {{ with .Params.last_name }}<div class="last-name">{{ . }}</div>{{ end }}
-            </div>
-            <div class="fulscreen-nav">
-              <ul class="list-inline fullscreen-nav-holder">
-                {{ range site.Menus.main }}
-                <li><a id="" class="text-uppercase hvr-underline-from-left 1"
-                    href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{ .Name }}</a>
-                </li>
-                {{ end }}
-              </ul>
-            </div>
-            <div  class="full-nav-icon-holder">
-              <ul class="full-nav-icons list-inline">
-                {{ range site.Params.social }}
-                <li><a id="animated-icon" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-                {{ end }}
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
+
+ 
 </section>
 {{ end }}
 <!-- End Header -->

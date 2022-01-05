@@ -1,11 +1,10 @@
 <!-- Start Sobre mim -->
 {{ with .GetPage "about" }}
 <style>{{.Params.custom_css | safeCSS}}</style>
-<div></div>
 <section id="about" class="about-me section-sm {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}  style="background-image: url('{{ .Params.bg_image | absURL }}');">
   <div class="container" >
     <div class="row about-me-holder" >
-      <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
+      <div class="col-lg-6 col-md-6 col-sm-4 about-me-text d-flex align-self-center">
         <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
           <h1>{{ .Title | markdownify }}</h1>
           <div class="content" id="text-about">{{ .Content | markdownify | emojify }}</div>
@@ -17,13 +16,6 @@
           {{ end }}
         </div>
       </div>
-      <!-- image in right 
-      {{ with .Params.image }}
-      <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s" >
-        <img class="img-fluid" src="{{ . | absURL }}" alt="about-me">
-      </div>
-      {{ end }}
-      -->
     </div>
 </section>
 
