@@ -1,6 +1,6 @@
 ---
 description: Thalis Rebouças - Blog.
 draft: false
-image: images/backgrounds/black-bg.png
+image: images/backgrounds/blog.png
 title: Blog | Thalis
 ---
