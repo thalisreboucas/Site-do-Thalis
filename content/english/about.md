@@ -14,7 +14,7 @@ experience:
     content: Virei o Presidente da Empresa Júnior no meio do ano de 2021, e com isso
       fiquei na parte de organização da empresa na parte jurídica e diretorias da
       empresa ,além de cuidar do planejamento estratégico.
-    duration: 2021.2
+    duration: 2021.2 - 2022.1
     name: Diretor Presidente
   - company: Empresa Júnior Gauss
     content: Virei Diretor da Empresa Júnior no meio do ano de 2020, e com isso fiquei
