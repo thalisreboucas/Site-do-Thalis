@@ -2,10 +2,10 @@
 title: Funil de vendas
 author: 'Thalis Rebouças'
 date: '2022-01-11'
-slug: []
 categories: ["Apresentação"]
-tags: ["Apresentação"]
-draft: yes
+tags:
+- Apresentação
+draft: false
 description: Apresentação
 image: images/portfolio/funil.jpeg
 ---
