@@ -21,7 +21,7 @@
 <section class="blog {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}}>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mb-2 mb-lg-0 ">
+      <div class="col-lg-8 mb-2 mb-lg-2 ">
     <div class="row wow fadeInUp" data-wow-duration="1.5s">
       {{ $paginator:= .Paginate .Data.Pages }}
       {{ range $paginator.Pages }}
@@ -31,7 +31,7 @@
               src="{{.Params.image | absURL }}" alt="{{.Title}}" class="card-img-top"></a> {{ end }}
           <div class="card-body">
             <h4 class="mb-2"><a class="card-title" href="{{.Permalink}}">{{.Title}}</a></h4>
-            <p class="card-text"id = "summa" >{{.Summary}}</p>
+            <p class="card-text" >{{.Summary}}</p>
             <center><a href="{{.Permalink}}" class="btn btn-transparent">Leia mais</a></center>
           </div>
         </div>

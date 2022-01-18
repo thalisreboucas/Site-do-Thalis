@@ -2525,12 +2525,6 @@ left: 100px;
   padding-bottom: 100px;
 }
 
-#summa{
-  max-width: 150ch;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
 
 #branco{
   color:#fff;
