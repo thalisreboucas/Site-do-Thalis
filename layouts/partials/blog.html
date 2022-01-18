@@ -3,19 +3,20 @@
 <style>{{.Params.custom_css | safeCSS}}</style>
 <section class="post {{.Params.custom_class}}" {{.Params.custom_attributes | safeHTMLAttr}} id="blog">
     
-<center>
-     <h3 class="wow fadeInUp" data-wow-duration="1.5s">
+
+							<section  class="wrapper alt style4">
+							  <center>
+     <h3 id = "branco" class="wow fadeInUp" data-wow-duration="1.5s">
           <br>
           <small>Últimas do </small> <br> 
           Blog <br>
           <Small>Conheça um pouco do que eu sei fazer :) </Small> 
           </h3>
 </center>
-                
-
-							<section  class="wrapper alt style4">
-								<div class="inner wow fadeInUp">
-									<section class="features wow fadeInUp">
+<h3 class = "major">     </h3>
+            
+								<div class="inner wow fadeInUp" data-wow-duration="1.5s" >
+									<section class="features wow fadeInUp" data-wow-duration="1.5s">
 											
 											{{ range first 4  .Data.Pages }}	
 										<article>
