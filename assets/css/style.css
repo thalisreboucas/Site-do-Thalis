@@ -3014,8 +3014,5 @@ a.special:not(.button) {
 			color: rgba(255, 255, 255, 0.35);
 		}
 		
-.button.primary {
-			background-color: #4c5c96;
-			box-shadow: none;
-		}
+
 
