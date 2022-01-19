@@ -160,7 +160,7 @@ body {
 .logo {
   position: absolute;
   z-index: 10;
-  top: 2px;
+  top: 8px;
   left: 40px;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .logo img {
-  width: 205px;
+  width: 60px;
 }
 
 .owl-carousel.owl-full-width {

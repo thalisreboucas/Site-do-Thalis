@@ -20,8 +20,8 @@ params:
   description: Feito por Thalis Rebouças
   favicon: images/favicon.png
   logo_dark: images/logo-dark.png
-  logo_light: images/logo.png
-  logo_width: 150px
+  logo_light: images/logo_wf.png
+  logo_width: 40px
   plugins:
     css:
       - link: plugins/bootstrap/bootstrap.min.css
