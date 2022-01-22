@@ -6,7 +6,7 @@ categories: ["R"]
 tags: ["R","Shiny"]
 description: Shiny APP
 image: images/portfolio/alem.png
-draft: yes
+draft: false
 ---
 
 ## Alem Shiny
