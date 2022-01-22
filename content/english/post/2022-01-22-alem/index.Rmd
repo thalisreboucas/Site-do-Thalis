@@ -1,0 +1,18 @@
+---
+title: ALEM
+author: 'Thalis Rebouças'
+date: '2022-01-22'
+categories: [R]
+tags: [R,Shiny]
+draft: yes
+description: Shiny APP
+image: images/portfolio/alem.png
+---
+
+## Alem Shiny
+
+É um aplicativo explicando melhor sobre o algoritmo de Maxima Expectativa 
+
+### Link abaixo 
+
+<a href = "https://thalisreboucas.shinyapps.io/ALEM/">Clique aqui para ir para o ALEM</a>
