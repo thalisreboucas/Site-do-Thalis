@@ -1,0 +1,114 @@
+---
+title: "Websraping Estados Do Ceará"
+author: "Thalis Rebouças"
+date: '2022-02-07T20:13:29-03:00'
+categories: R
+tags:
+- R
+- WebScraping
+image: images/portfolio/web_ce.png
+draft: no
+---
+
+
+Para esta aplicação vamos Precisar do Pacote `Rvest` responsavél por fazer esse trabalho para gente. 
+
+O site que vamos pegar as informações é o "https://cep.guiamais.com.br/" , que possue os ceps e endereços de todos os estados do Brasil.
+
+```{r}
+library(rvest , quietly = TRUE)
+library(tidyverse , quietly = TRUE)
+library(leaflet , quietly =  TRUE)
+library(stringr , quietly = TRUE)
+```
+
+
+
+# Web scraping dos bairros Fortaleza 
+
+
+```
+url_fortal <- paste0("https://cep.guiamais.com.br/busca/fortaleza-ce?page=NUMBER")
+dados_fortaleza <- data.frame()
+for(i in 1:400){
+  url <- stringr::str_replace(url_fortal, "NUMBER", as.character(i))
+  print(url)
+  lista.tabelas <- xml2::read_html(url) %>% rvest::html_table(header = T)
+  tabela <- lista.tabelas[[1]]
+  dados_fortaleza <- dplyr::bind_rows(dados_fortaleza, tabela)
+}
+```
+
+
+```{r ,include=FALSE}
+url_fortal <- paste0("https://cep.guiamais.com.br/busca/fortaleza-ce?page=NUMBER")
+dados_fortaleza <- data.frame()
+for(i in 1:400){
+  url <- stringr::str_replace(url_fortal, "NUMBER", as.character(i))
+  print(url)
+  lista.tabelas <- xml2::read_html(url) %>% rvest::html_table(header = T)
+  tabela <- lista.tabelas[[1]]
+  dados_fortaleza <- dplyr::bind_rows(dados_fortaleza, tabela)
+}
+
+dados_fortaleza <- dplyr::rename(dados_fortaleza ,BAIRRO = BAIRRO...2 , CIDADE_ESTADO = BAIRRO...4 ) 
+```
+
+## Olhando para ver se deu tudo certo 
+
+```{r}
+dados_fortaleza %>% head()
+```
+
+
+```{r}
+dados_fortaleza %>% dplyr::count(BAIRRO) %>% View()
+```
+
+```{r}
+#write.table(dados_fortaleza, file="Fortaleza.csv", sep=";")
+```
+
+# Web scraping dos bairros caucaia
+
+
+
+```{r include=FALSE}
+
+url_base <- paste0("https://cep.guiamais.com.br/busca/caucaia-ce?page=NUMBER")
+dados <- data.frame()
+for(i in 1:93){
+  url <- stringr::str_replace(url_base, "NUMBER", as.character(i))
+  print(url)
+  lista.tabelas <- xml2::read_html(url) %>% rvest::html_table(header = T)
+  tabela <- lista.tabelas[[1]]
+  dados <- dplyr::bind_rows(dados, tabela)
+}
+
+dados <- dplyr::rename(dados ,BAIRRO = BAIRRO...2 , CIDADE_ESTADO = BAIRRO...4 )
+```
+```{}
+
+url_base <- paste0("https://cep.guiamais.com.br/busca/caucaia-ce?page=NUMBER")
+dados <- data.frame()
+for(i in 1:93){
+  url <- stringr::str_replace(url_base, "NUMBER", as.character(i))
+  print(url)
+  lista.tabelas <- xml2::read_html(url) %>% rvest::html_table(header = T)
+  tabela <- lista.tabelas[[1]]
+  dados <- dplyr::bind_rows(dados, tabela)
+}
+
+dados <- dplyr::rename(dados ,BAIRRO = BAIRRO...2 , CIDADE_ESTADO = BAIRRO...4 )
+```
+
+
+
+## Olhando para ver se deu tudo certo 
+
+```{r}
+dados %>% head()
+```
+
+
+
