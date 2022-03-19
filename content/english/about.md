@@ -10,10 +10,10 @@ custom_css: ""
 experience:
   enable: true
   experience_list:
-  - company: Liber – Consultoria Empresarial
+  - company: Liber Consultoria Empresarial
     content: Entrei na Liber  e comecei a aprender sobre gestão financeira , comercial e processos ,além de atuar nessas áreas e atuei na parte de estruturação da inteligência de mercado e ciência de dados da Liber.
     duration: 2022.1 - Atualmente
-    name: Estagiário
+    name: Estagiário de Gestão Empresarial
   - company: Empresa Júnior Gauss
     content: Virei o Presidente da Empresa Júnior no meio do ano de 2021, e com isso
       fiquei na parte de organização da empresa na parte jurídica e diretorias da
