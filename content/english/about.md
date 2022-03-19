@@ -3,7 +3,7 @@ bg_image: images/backgrounds/bgeu.png
 button:
   enable: true
   label: Baixe meu currículo
-  link: https://thalisreboucas.github.io/curriculo/
+  link: https://www.canva.com/design/DAE7YHrlGVU/JEOXUhgvPeiTRgLFfnY6sQ/view?utm_content=DAE7YHrlGVU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 custom_attributes: ""
 custom_class: ""
 custom_css: ""
